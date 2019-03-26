@@ -1,5 +1,0 @@
-\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
-\beamer@sectionintoc {2}{Environments}{22}{0}{2}
-\beamer@sectionintoc {3}{Macros\tmspace +\thinmuskip {.1667em}/\tmspace +\thinmuskip {.1667em}Definitions}{29}{0}{3}
-\beamer@sectionintoc {4}{\texttt {MathLetter.sty}}{41}{0}{4}
-\beamer@sectionintoc {5}{끝}{43}{0}{5}
