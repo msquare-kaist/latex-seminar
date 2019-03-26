@@ -136,16 +136,16 @@
     \framesubtitle{일반 텍스트의 글씨체}
     \begin{itemize}
       \item \mintinline[escapeinside=||]{latex}{{\normalfont 기본 폰트}} {\normalfont 기본 폰트}
-      \item \mintinline[escapeinside=||]{latex}{\textbf{굵게}}, \mintinline[escapeinside=||]{latex}{{\bfseries 굵게}} \textbf{굵게}
-      \item \mintinline[escapeinside=||]{latex}{\textit{이탤릭}}, \mintinline[escapeinside=||]{latex}{{\itshape 이탤릭}} \textit{이탤릭}
+      \item \mintinline[escapeinside=||]{latex}{\textbf{굵게 bold}}, \mintinline[escapeinside=||]{latex}{{\bfseries 굵게 bold}} \textbf{굵게 bold}
+      \item \mintinline[escapeinside=||]{latex}{\textit{이탤릭 italic}}, \mintinline[escapeinside=||]{latex}{{\itshape 이탤릭 italic}} \textit{이탤릭 italic}
       \begin{itemize}
         \item \mintinline[escapeinside=||]{latex}{\textit}는 그 다음에 똑바로 선 글자가 왔을 때 간격 보정을 해줍니다.
         \item \mintinline[escapeinside=||]{latex}{\textit{ital}ic}, \mintinline[escapeinside=||]{latex}{{\itshape ital}ic}
         \item \includegraphics[width=0.09\textwidth]{italic}
       \end{itemize}
-      \item \mintinline[escapeinside=||]{latex}{\textrm{명조}}, \mintinline[escapeinside=||]{latex}{{\rmfamily 명조}} \textrm{명조}
-      \item \mintinline[escapeinside=||]{latex}{\textsf{돋움}}, \mintinline[escapeinside=||]{latex}{{\sffamily 돋움}} \textsf{돋움}
-      \item \mintinline[escapeinside=||]{latex}{\textsl{기울임}}, \mintinline[escapeinside=||]{latex}{{\slshape 기울임}} \textsl{기울임}
+      \item \mintinline[escapeinside=||]{latex}{\textrm{명조 roman}}, \mintinline[escapeinside=||]{latex}{{\rmfamily 명조 roman}} \textrm{명조 roman}
+      \item \mintinline[escapeinside=||]{latex}{\textsf{돋움}}, \mintinline[escapeinside=||]{latex}{{\sffamily sans-serif}} \textsf{돋움 sans-serif}
+      \item \mintinline[escapeinside=||]{latex}{\textsl{기울임}}, \mintinline[escapeinside=||]{latex}{{\slshape slanted}} \textsl{기울임 slanted}
       \item \mintinline[escapeinside=||]{latex}{\textsc{SmallCaps}}, \mintinline[escapeinside=||]{latex}{{\scshape SmallCaps}} \textsc{SmallCaps}
       \item \mintinline[escapeinside=||]{latex}{\texttt{typewriter}}, \mintinline[escapeinside=||]{latex}{{\ttfamily typewriter}} \texttt{typewriter}
     \end{itemize}
@@ -160,9 +160,9 @@
       \item \mintinline[escapeinside=||]{latex}{\mathit{italic}} $\mathit{italic}$
       \item \mintinline[escapeinside=||]{latex}{\mathrm{Roman}} $\mathrm{Roman}$
       \item \mintinline[escapeinside=||]{latex}{\mathsf{Sans-serif}} $\mathsf{Sans-serif}$
-      \item \mintinline[escapeinside=||]{latex}{\mathbb{BLACK}} $\mathbb{BLACK}$
-      \item \mintinline[escapeinside=||]{latex}{\mathcal{CALI}} $\mathcal{CALI}$
-      \item \mintinline[escapeinside=||]{latex}{\mathscr{SCRIPT}} $\mathscr{SCRIPT}$
+      \item \mintinline[escapeinside=||]{latex}{\mathbb{BLACK}} $\mathbb{BLACK}$ (대문자만)
+      \item \mintinline[escapeinside=||]{latex}{\mathcal{CALI}} $\mathcal{CALI}$ (대문자만)
+      \item \mintinline[escapeinside=||]{latex}{\mathscr{SCRIPT}} $\mathscr{SCRIPT}$ (대문자만)
       \item \mintinline[escapeinside=||]{latex}{\mathfrak{Fraktur}} $\mathfrak{Fraktur}$
     \end{itemize}
   \end{frame}
@@ -219,13 +219,13 @@ $\alpha, \beta$는 있지만 \texttt{\char`\\Alpha, \char`\\Beta}는 없다!
 Radical of an ideal $\sqrt{\mathfrak a}$
 
 크기가 조절되는 괄호를 열 때에는 $\left( \frac a b \right)$처럼 씁니다.
-강의할 때 어느 정도 설명해주세요 \verb!^^!7
+강의할 때 어느 정도 설명해주세요 \char`\^\char`\^7
 \end{document}
     \end{minted}
-    \verb!^^!7
+    \char`\^\char`\^7
   \end{frame}
-  
-  
+
+
   \begin{frame}[fragile]
     \frametitle{공백, 행간 간격}
     \framesubtitle{}
@@ -244,7 +244,38 @@ Radical of an ideal $\sqrt{\mathfrak a}$
       \item<4-> \mintinline[escapeinside=||]{latex}{\noindent}는 문단 시작 시 들여쓰기를 없앱니다.
     \end{itemize}
   \end{frame}
-  
+
+
+  \begin{frame}[fragile]
+    \frametitle{공백 관련}
+    \framesubtitle{}
+    \begin{itemize}
+      \item<1-> \TeX은 띄어쓰기에 민감합니다. 예를 들어 괄호 앞뒤로 띄어쓰기를 하는지가 상관없는 C나 Python 등 다른 언어와 달리, \TeX\ 문서를 쓸 때엔 띄어쓰기를 주의해야 합니다.
+      \item<2-> 텍스트 모드에서, 띄어쓰기는 잘 없어지지 않습니다. 띄어쓰기가 없어지는 경우는:
+      \begin{itemize}
+        \item 두 개 이상 연속 띄어쓰기가 있을 때 한 개만 남습니다. 즉 띄어쓰기 여러 개를 쓰려면 \mintinline{latex}{\ \ \ }와 같이 써야 합니다.
+        \item 한 줄의 맨 앞{\,\small(leading)\normalsize\,}에 있는 띄어쓰기는 모두 무시됩니다.
+      \end{itemize}
+      \item<3-> 텍스트 모드에서, 줄바꿈의 위아래 줄이 비어있지 않으면 그 줄바꿈은 띄어쓰기로 처리됩니다.
+      \begin{itemize}
+        \item 이 띄어쓰기를 없애려면, 코드 가독성을 위해 줄바꿈을 했지만 띄어쓰기는 원하지 않는다면, 그 줄 끝에 주석 기호 \texttt{\%}를 붙이면 그 줄바꿈이 주석 처리되어 사라집니다. 참고로, 다음 줄의 앞에 있는 띄어쓰기까지 모두 사라집니다.
+      \end{itemize}
+    \end{itemize}
+  \end{frame}
+
+
+  \begin{frame}[fragile]
+    \frametitle{공백 관련}
+    \framesubtitle{}
+    \begin{itemize}
+      \item 수식 모드에서는 띄어쓰기가 잘 영향을 주지 않습니다. 따라서 수식 안에서 텍스트 모드를 실행하려면, \mintinline{latex}{\text{...}} 등으로 감싸 주어야 합니다.
+      \begin{itemize}
+        \item \mintinline{latex}{$not a good example$} $not a good example$
+        \item \mintinline{latex}{$\textrm{\textit{good example}}$} $\textrm{\textit{good example}}$
+      \end{itemize}
+    \end{itemize}
+  \end{frame}
+    
   
   \begin{frame}[fragile]
     \frametitle{달러나 백슬래시는 어떻게 입력할까요}
