@@ -73,7 +73,6 @@ Radical of an ideal $\sqrt{\mathfrak a}$
 ```
 
 ```tex
-\begin{itemize}
 \[ 
   \begin{pmatrix}
     a_{11} & a_{12} \\  
