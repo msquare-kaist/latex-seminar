@@ -9,6 +9,7 @@
       \item \url{https://www.tug.org/texlive/}에 방문하여 설치
       \item \texttt{texlive-full}을 받으면 정신건강에 매우 편하지만, 약 \textbf{4.9 GB}를 차지합니다.
       \item \texttt{texlive-basic}을 받으면 초기 용량을 \textbf{64 MB}까지 줄일 수 있지만, 필요한 패키지를 일일이 설치해야 합니다.
+      \item 정식 release는 2018까지 있고, 현재 2019 preview가 진행되고 있습니다. \url{https://tug.org/texlive/pretest.html}
     \end{itemize}
     \item MikTeX (Windows) {\small(\url{https://miktex.org/})}
     \item TnXTeX {\small(\url{http://wiki.ktug.org/wiki/wiki.php/TnXTeX})}
@@ -67,6 +68,7 @@
       \item \newterm{매크로}[macro] 또는 \newterm{정의}[definition]란 기본적으로 정의되어 있는 토큰들{\,\small(primitives)\,}을 이용하여 정의된 토큰들을 말합니다.
       \item 매크로는 보통 \mintinline[escapeinside=||]{latex}{\macro}와 같이 백슬래시로 시작하고 알파벳이 뒤에 따라 옵니다.
       \item 한 글자짜리 매크로는 알파벳이 아니어도 올 수 있습니다. \mintinline[escapeinside=||]{latex}{\ }, \mintinline[escapeinside=||]{latex}{\#}, ...
+      \item \{...\}는 여러 토큰을 하나처럼 묶어주는 토큰.
     \end{itemize}
   \end{frame}
   
@@ -105,10 +107,28 @@
 안녕하세요? \LaTeX을 배우면 좋은 일이 있을 거예요. % 아닐 수도..
 
 \makeatletter
-당신이 입력했던 제목입니다: \@title.
+당신이 입력했던 제목입니다: \@title.\footnote{신기한가요??}
 \makeatother
 \end{document}
   \end{minted}
+  \end{frame}
+  
+  \begin{frame}[fragile]
+    \frametitle{글씨체}
+    \framesubtitle{인자를 받는 매크로와 스위치}
+    \begin{itemize}
+      \item 글씨체를 바꾸는 매크로는 크게 두 가지로 나뉩니다.
+      \item 인자를 받는 매크로: \texttt{\{...\}} 안에 있는 글씨만 바꿉니다. \texttt{\char`\\text}나 \texttt{\char`\\math} 등으로 시작합니다.
+      \begin{itemize}
+        \item \mintinline[escapeinside=||]{latex}{\textit{italic here only} not here}
+        \item \textit{italic here only} not here
+      \end{itemize}
+      \item 스위치: 어떤 scope 안에서, 그 매크로 이후의 글씨에 \textbf{모두 적용}됩니다. 사용에 주의해 주세요. \texttt{\char`\\...shape}나 \texttt{\char`\\...series}, \texttt{\char`\\...family}로 끝납니다.
+      \begin{itemize}
+        \item \mintinline[escapeinside=||]{latex}{\itshape{italic here only} also here}
+        \item \itshape{italic here only} also here
+      \end{itemize}
+    \end{itemize}
   \end{frame}
   
   \begin{frame}[fragile]
@@ -152,12 +172,12 @@
     \framesubtitle{}
     \begin{itemize}
       \item \mintinline[escapeinside=||]{latex}{\tiny \scriptsize \footnotesize \small \normalsize} \mintinline[escapeinside=||]{latex}{\large \Large \LARGE \huge \Huge}
-      \item \tiny A\scriptsize A\footnotesize A\small A\normalsize A\large A\Large A\LARGE A\huge A\Huge
+      \item {\tiny A\scriptsize A\footnotesize A\small A\normalsize A\large A\Large A\LARGE A\huge A\Huge}
       \item \mintinline[escapeinside=||]{latex}{\fontsize{글씨 크기}{line height}\selectfont}
       \begin{itemize}
         \item 보통 line height는 글씨 크기의 1.2\,배
       \end{itemize}
-      \item \fontsize{60}{72}\selectfont A\fontsize{30}{36}\selectfont B\fontsize{50}{72}\selectfont C\fontsize{80}{86}\selectfont D
+      \item {\fontsize{60}{72}\selectfont A\fontsize{30}{36}\selectfont B\fontsize{50}{72}\selectfont C\fontsize{80}{86}\selectfont D}
     \end{itemize}
   \end{frame}
   
@@ -199,10 +219,10 @@ $\alpha, \beta$는 있지만 \texttt{\char`\\Alpha, \char`\\Beta}는 없다!
 Radical of an ideal $\sqrt{\mathfrak a}$
 
 크기가 조절되는 괄호를 열 때에는 $\left( \frac a b \right)$처럼 씁니다.
-강의할 때 어느 정도 설명해주세요 \verb!^^!
+강의할 때 어느 정도 설명해주세요 \verb!^^!7
 \end{document}
     \end{minted}
-    \verb!^^!
+    \verb!^^!7
   \end{frame}
   
   
