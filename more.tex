@@ -6,10 +6,12 @@
     \item<1-> 유클리드 알고리듬을 구현해봅시다! 나누어질 수(\texttt{\#1})와 나눌 수(\texttt{\#2})를 받아 표를 만듭니다. 편의를 위해 $\texttt{\#1}\ge\texttt{\#2} > 0$이라고 가정합니다.
     \item<2-> 먼저 전체를 감쌀 array가 필요하므로, array로 감싸고 그 안에 있는 내용은 다른 매크로에게 맡깁니다.
     \item[]<2-> \vspace{-1.5em}\begin{minted}{latex}
+\makeatletter\ExplSyntaxOn
 \begin{array}{r@{\;=\;}r@{\;\cdot\;}l@{}l
               @{}l @{\quad}|@{\quad} r@{}r@{}r@{}r@{}r}
   ... % 다른 매크로
 \end{array}
+\makeatother\ExplSyntaxOff
     \end{minted}
     \item<3-> 생각해 보면 나누어질 수와 나눌 수, 몫, 나머지, 이전 두 단계의 결과를 저장해야 되니까 10 개의 argument를 사용해야 하는데, 이것은 불가능합니다. 따라서 나누어질 수와 나눌 수는 전역변수로 저장하도록 합시다.
     \item[]<3-> \mintinline{latex}{\gdef\@@@@a{#1}\gdef\@@@@b{#2}}
@@ -20,10 +22,9 @@
   \frametitle{조금 더 복잡한 예시}
   \framesubtitle{이 정도는 익혀두면 과제할 때 손으로 계산할 필요가 없습니다}
   \begin{itemize}
-    \item<1-> 이 과정에서 @를 매크로 이름으로 사용하였고 앞으로 \LaTeX\,3 문법을 쓸 것이기 때문에, @, \_, :를 모두 매크로 이름에 쓸 수 있게 해줍니다. 그리고 안에 들어갈 매크로를 써줍니다.
+    \item<1-> 그리고 안에 들어갈 매크로를 구현합니다.
     \item[]<1-> \vspace{-1.5em}\begin{minted}{latex}
-\makeatletter\ExplSyntaxOn
-\begin{array}{r@{\;=\;}r@{\;\cdot\;}l@{}l
+...\begin{array}{r@{\;=\;}r@{\;\cdot\;}l@{}l
               @{}l @{\quad}|@{\quad} r@{}r@{}r@{}r@{}r}
   \euclid@lgorithm               % initialize
   {#1}{#2}                       % a and b
@@ -33,8 +34,7 @@
   {1}{\the\numexpr
       -\int_div_truncate:nn{#1}{#2}
                             \relax} % r = 1 * a + (-q) * b
-\end{array} ...
-\makeatother\ExplSyntaxOff
+\end{array}...
     \end{minted}
   \end{itemize}
 \end{frame}
