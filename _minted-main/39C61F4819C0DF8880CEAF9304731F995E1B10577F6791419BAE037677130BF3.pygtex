@@ -1,0 +1,21 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}ExplSyntaxOn} \PYG{c}{\PYGZpc{} \PYGZus{}와 :를 매크로 이름에 쓸 수 있게 만듭니다.}
+\PYG{k}{\PYGZbs{}NewDocumentCommand}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}vecNotation}\PYG{n+nb}{\PYGZcb{}\PYGZob{}}m O\PYG{n+nb}{\PYGZob{}}3\PYG{n+nb}{\PYGZcb{}\PYGZcb{}\PYGZob{}}
+  \PYG{c}{\PYGZpc{} \PYGZbs{}tl\PYGZus{}if\PYGZus{}eq:nnTF\PYGZob{}토큰 리스트1\PYGZcb{}\PYGZob{}토큰 리스트2\PYGZcb{}\PYGZob{}같을 때\PYGZcb{}\PYGZob{}다를 때\PYGZcb{}}
+  \PYG{k}{\PYGZbs{}tl}\PYG{n+nb}{\PYGZus{}}if\PYG{n+nb}{\PYGZus{}}eq:nnTF\PYG{n+nb}{\PYGZob{}}\PYGZsh{}2\PYG{n+nb}{\PYGZcb{}\PYGZob{}}1\PYG{n+nb}{\PYGZcb{}\PYGZob{}}
+    (\PYGZsh{}1\PYG{k}{\PYGZbs{}sb} 1) \PYG{c}{\PYGZpc{} \PYGZbs{}ExplSyntaxOn이 \PYGZus{}를 문자로 바꾸므로}
+              \PYG{c}{\PYGZpc{} \PYGZbs{}sb라는 명령어로 subscript를 만듭니다.}
+  \PYG{n+nb}{\PYGZcb{}\PYGZob{}}
+    \PYG{k}{\PYGZbs{}tl}\PYG{n+nb}{\PYGZus{}}if\PYG{n+nb}{\PYGZus{}}eq:nnTF\PYG{n+nb}{\PYGZob{}}\PYGZsh{}2\PYG{n+nb}{\PYGZcb{}\PYGZob{}}2\PYG{n+nb}{\PYGZcb{}\PYGZob{}}
+      (\PYGZsh{}1\PYG{k}{\PYGZbs{}sb} 1, \PYGZsh{}1\PYG{k}{\PYGZbs{}sb} 2)\PYG{n+nb}{\PYGZca{}\PYGZob{}}\PYG{k}{\PYGZbs{}mathsf}\PYG{n+nb}{\PYGZob{}}T\PYG{n+nb}{\PYGZcb{}\PYGZcb{}}
+    \PYG{n+nb}{\PYGZcb{}\PYGZob{}}
+      \PYG{k}{\PYGZbs{}tl}\PYG{n+nb}{\PYGZus{}}if\PYG{n+nb}{\PYGZus{}}eq:nnTF\PYG{n+nb}{\PYGZob{}}\PYGZsh{}2\PYG{n+nb}{\PYGZcb{}\PYGZob{}}3\PYG{n+nb}{\PYGZcb{}\PYGZob{}}
+        (\PYGZsh{}1\PYG{k}{\PYGZbs{}sb} 1, \PYGZsh{}1\PYG{k}{\PYGZbs{}sb} 2, \PYGZsh{}1\PYG{k}{\PYGZbs{}sb} 3)\PYG{n+nb}{\PYGZca{}\PYGZob{}}\PYG{k}{\PYGZbs{}mathsf}\PYG{n+nb}{\PYGZob{}}T\PYG{n+nb}{\PYGZcb{}\PYGZcb{}}
+      \PYG{n+nb}{\PYGZcb{}\PYGZob{}}
+        (\PYGZsh{}1\PYG{k}{\PYGZbs{}sb} 1, \PYGZsh{}1\PYG{k}{\PYGZbs{}sb} 2, \PYG{k}{\PYGZbs{}dots}, \PYGZsh{}1\PYG{k}{\PYGZbs{}sb}\PYG{n+nb}{\PYGZob{}}\PYGZsh{}2\PYG{n+nb}{\PYGZcb{}})\PYG{n+nb}{\PYGZca{}\PYGZob{}}\PYG{k}{\PYGZbs{}mathsf}\PYG{n+nb}{\PYGZob{}}T\PYG{n+nb}{\PYGZcb{}\PYGZcb{}}
+      \PYG{n+nb}{\PYGZcb{}}
+    \PYG{n+nb}{\PYGZcb{}}
+  \PYG{n+nb}{\PYGZcb{}}
+\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}ExplSyntaxOff} \PYG{c}{\PYGZpc{} \PYGZus{}와 :를 다시 각자의 목적으로 되돌립니다.}
+\end{Verbatim}

@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}newcommand}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}repsum}\PYG{n+nb}{\PYGZcb{}}[3]\PYG{n+nb}{\PYGZob{}}\PYG{c}{\PYGZpc{}}
+  \PYG{k}{\PYGZbs{}foreach} \PYG{k}{\PYGZbs{}i} in \PYG{n+nb}{\PYGZob{}}1,...,\PYGZsh{}1\PYG{n+nb}{\PYGZcb{}\PYGZob{}}
+    \PYG{k}{\PYGZbs{}ifnum\PYGZbs{}i}\PYGZgt{}1
+      + \PYGZsh{}2\PYG{n+nb}{\PYGZus{}\PYGZob{}}\PYG{k}{\PYGZbs{}i}\PYG{n+nb}{\PYGZcb{}} \PYGZsh{}3\PYG{n+nb}{\PYGZus{}\PYGZob{}}\PYG{k}{\PYGZbs{}i}\PYG{n+nb}{\PYGZcb{}}
+    \PYG{k}{\PYGZbs{}else}
+      \PYGZsh{}2\PYG{n+nb}{\PYGZus{}\PYGZob{}}\PYG{k}{\PYGZbs{}i}\PYG{n+nb}{\PYGZcb{}} \PYGZsh{}3\PYG{n+nb}{\PYGZus{}\PYGZob{}}\PYG{k}{\PYGZbs{}i}\PYG{n+nb}{\PYGZcb{}}
+    \PYG{k}{\PYGZbs{}fi}
+  \PYG{n+nb}{\PYGZcb{}}
+\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}
