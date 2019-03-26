@@ -18,6 +18,11 @@
 \usepackage{forloop}
 ```
 
+## Must-have Packages
+혹시 용량이 적은 TeX dist를 설치하셨다면 다음 명령어를 실행시켜주세요.
+```bash
+tlmgr install adjustbox amscls amsfonts amsmath babel beamer biblatex bibtex booktabs caption changepage cjk-ko cm collectbox dantelogo dehyph dtk dvipdfmx dvips ec enumitem environ etex etoolbox euenc expex fancyhdr fancyvrb float fontspec forloop framed fvextra geometry glyphlist graphics graphics-cfg graphics-def gsftopk helvetic hyperref hyphen-base ifluatex ifmtarg ifplatform iftex ifxetex inconsolata jknapltx knuth-lib kotex-plain kotex-utf kpathsea l3kernel l3packages latex latex-bin latex-fonts latexconfig latexmk lineno listings lm logreq lua-visual-debug luainputenc lualibs luaotfload luatex luatexko makeindex mathspec mathtools metafont mfware ms nanumtype1 natbib oberdiek pdftex pgf pgfplots plain relsize rsfs scheme-infraonly setspace tcolorbox tetex tex tex-ini-files texlive.infra tikz-cd times tipa titlesec titling tools translator trimspaces ulem unicode-data upquote url wrapfig xcolor xetex xetexconfig xifthen xkeyval xstring xunicode zapfding
+```
 
 ## 쓰인 코드들
 ```tex
