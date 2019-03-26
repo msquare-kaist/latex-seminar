@@ -2,6 +2,8 @@
 
 [main.pdf](main.pdf)
 
+* 2018 여름 LaTeX 스터디: http://utophii.dothome.co.kr/tex/
+
 ## 생각없이 불러오면 편한 패키지들
 ```tex
 \usepackage{kotex}
@@ -107,4 +109,127 @@ Radical of an ideal $\sqrt{\mathfrak a}$
 \end{figure}
 ```
 
+```tex
+\newcounter{left} \newcounter{right}
+\forloop{left}{2}{\value{left} < 10}{%
+  \noindent\forloop{right}{2}{\value{right} < 10}{%
+    $\arabic{left} \times \arabic{right} =
+      \the\numexpr\arabic{left} * \arabic{right}\relax$,
+  }
+  \par
+}
+```
+
+```tex
+\ExplSyntaxOn % _와 :를 매크로 이름에 쓸 수 있게 만듭니다.
+\NewDocumentCommand{\vecNotation}{m O{3}}{
+  % \tl_if_eq:nnTF{토큰 리스트1}{토큰 리스트2}{같을 때}{다를 때}
+  \tl_if_eq:nnTF{#2}{1}{
+    (#1\sb 1) % \ExplSyntaxOn이 _를 문자로 바꾸므로 
+              % \sb라는 명령어로 subscript를 만듭니다.
+  }{
+    \tl_if_eq:nnTF{#2}{2}{
+      (#1\sb 1, #1\sb 2)^{\mathsf{T}}
+    }{
+      \tl_if_eq:nnTF{#2}{3}{
+        (#1\sb 1, #1\sb 2, #1\sb 3)^{\mathsf{T}}
+      }{
+        (#1\sb 1, #1\sb 2, \dots, #1\sb{#2})^{\mathsf{T}}
+      }
+    }
+  }
+}
+\ExplSyntaxOff % _와 :를 다시 각자의 목적으로 되돌립니다.
+```
+
+```tex
+\newcommand{\repsum}[3]{%
+  \foreach \i in {1,...,#1}{
+    \ifnum\i>1
+      + #2_{\i} #3_{\i}
+    \else
+      #2_{\i} #3_{\i}
+    \fi
+  }
+}
+```
+
+```tex
+\ExplSyntaxOn
+\makeatletter
+% supposing #1 >= #2 > 0
+\newcommand{\euclidalgorithm}[2]{             % example: \euclidalgorithm{60}{33}
+    \gdef\a{#1}
+    \gdef\b{#2}
+    \[
+    \begin{array}{r@{\;=\;}r@{\;\cdot\;}l@{}l@{}l@{\quad}|@{\quad}r@{}r@{}r@{}r@{}r}
+        \euclid@lgorithm                                    % initialise
+        {#1}{#2}                                            % a and b
+        {\int_div_truncate:nn{#1}{#2}}                      % quotient q = floor(a / b)
+        {\int_mod:nn{#1}{#2}}                               % remainder a mod b
+        {0}{1}                                              % b = 0 * a + 1 * b
+        {1}{\the\numexpr-\int_div_truncate:nn{#1}{#2}\relax}% r = 1 * a + (-q) * b
+    \end{array}
+    \]
+}
+\newcommand{\euclid@lgorithm}[8]{
+    \int_compare:nNnTF {#4} = {0}
+    {
+        % if remainder is 0, do not call recursively
+        #1 & \mathbf{#2} & #3 &&&
+    }
+    {%
+        % print a line
+        #1 & #2 & #3 \;&\;+\;&\; #4 & #4 &\;=\;&\;\a \;\cdot\; &
+        \,{\ifnum#7<\z@ (#7) \else #7\hphantom{)}\fi} + \b \;\cdot\;&
+        \,{\ifnum#8<\z@ (#8) \else #8\hphantom{)}\fi} \\%
+        % call itself recursively
+        \euclid@lgorithm
+        {#2}{#4}
+        {\int_div_truncate:nn{#2}{#4}}
+        {\int_mod:nn{#2}{#4}}
+        {#7}{#8}
+        {\the\numexpr #5 - \int_div_truncate:nn{#2}{#4} * #7\relax}
+        {\the\numexpr #6 - \int_div_truncate:nn{#2}{#4} * #8\relax}% 
+    }
+}
+\makeatother
+\ExplSyntaxOff
+```
+
+```tex
+\makeatletter
+\def\eqv#1#2{\let\mod=\m@d{#1}\expandafter\eqvB{#2}}
+\def\eqvB#1{
+  \@ifnextchar\mod{\equiv#1}{\equiv#1\expandafter\eqvB}
+}
+\def\m@d#1{\quad({\operatorname{mod}}\;#1)}
+\makeatother
+```
+
+```tex
+\def\firstoftwo#1#2{#1}
+\def\secondoftwo#1#2{#2}
+
+\def\rev#1#2\revA#3\revB{%
+  \if\relax\detokenize{#2}\relax
+    \expandafter\firstoftwo
+  \else
+    \expandafter\secondoftwo
+  \fi{#1#3}{\rev#2\revA#1#3\revB}%
+}
+```
+
+```tex
+\makeatletter
+\expandafter\def\csname my@array@1\endcsname{1}
+\expandafter\def\csname my@array@2\endcsname{2}
+
+% with counter
+\newcounter{arrayindex}
+\setcounter{arrayindex}{3}
+\expandafter\def\csname my@array@\value{arrayindex}\endcsname
+  {\value{arrayindex}}
+\makeatother
+```
 
