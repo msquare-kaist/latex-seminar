@@ -1,0 +1,17 @@
+\frametitle{기본적인 매크로}
+  \framesubtitle{plain \TeX, \LaTeXe, \LaTeX\,3 버전}
+  \begin{itemize}
+    \item<1-> \mintinline[escapeinside=||]{latex}{\def\mymacro#1#2#3{\textit{#1}#2\textrm{#3}}}
+    \item<1-> 안타까운 사람들: \mintinline[escapeinside=||]{latex}{$2 \times 2 = 4$, $2 \times 3 = 6$, ...}
+    \item<2-> 매크로를 배운 후:\vspace{-1em}
+    \begin{minted}{latex}
+\newcounter{left} \newcounter{right}
+\forloop{left}{2}{\value{left} < 10}{%
+  \noindent\forloop{right}{2}{\value{right} < 10}{%
+    $\arabic{left} \times \arabic{right} =
+      \the\numexpr\arabic{left} * \arabic{right}\relax$,
+  }
+  \par
+}
+    \end{minted}
+  \end{itemize}

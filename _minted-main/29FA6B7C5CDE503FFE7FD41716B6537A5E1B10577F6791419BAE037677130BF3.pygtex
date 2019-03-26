@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}documentclass}\PYG{n+na}{[a4paper,10pt]}\PYG{n+nb}{\PYGZob{}}article\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}amsmath,amsfonts,amssymb,mathrsfs,mathtools,kotex\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}title}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}scshape} Practice\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}document\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}maketitle}
+\PYG{l+s+sb}{\PYGZbs{}[}\PYG{n+nb}{ }\PYG{n+nv}{\PYGZbs{}text}\PYG{n+nb}{\PYGZob{}근의 공식\PYGZcb{}:}\PYG{n+nv}{\PYGZbs{}qquad}\PYG{n+nb}{ x }\PYG{o}{=}\PYG{n+nb}{ }\PYG{n+nv}{\PYGZbs{}frac}\PYG{n+nb}{\PYGZob{}}\PYG{o}{\PYGZhy{}}\PYG{n+nb}{b}\PYG{n+nv}{\PYGZbs{}pm\PYGZbs{}sqrt}\PYG{n+nb}{\PYGZob{}b\PYGZca{}}\PYG{l+m}{2}\PYG{n+nb}{ }\PYG{o}{\PYGZhy{}}\PYG{n+nb}{ }\PYG{l+m}{4}\PYG{n+nb}{ac\PYGZcb{}\PYGZcb{}\PYGZob{}}\PYG{l+m}{2}\PYG{n+nb}{a\PYGZcb{}. }\PYG{l+s}{\PYGZbs{}]}
+\PYG{l+s}{\PYGZdl{}}\PYG{n+nv}{\PYGZbs{}alpha}\PYG{n+nb}{, }\PYG{n+nv}{\PYGZbs{}beta}\PYG{l+s}{\PYGZdl{}}는 있지만 \PYG{k}{\PYGZbs{}texttt}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}char}`\PYG{k}{\PYGZbs{}\PYGZbs{}}Alpha, \PYG{k}{\PYGZbs{}char}`\PYG{k}{\PYGZbs{}\PYGZbs{}}Beta\PYG{n+nb}{\PYGZcb{}}는 없다!
+
+Radical of an ideal \PYG{l+s}{\PYGZdl{}}\PYG{n+nv}{\PYGZbs{}sqrt}\PYG{n+nb}{\PYGZob{}}\PYG{n+nv}{\PYGZbs{}mathfrak}\PYG{n+nb}{ a\PYGZcb{}}\PYG{l+s}{\PYGZdl{}}
+
+크기가 조절되는 괄호를 열 때에는 \PYG{l+s}{\PYGZdl{}}\PYG{n+nv}{\PYGZbs{}left}\PYG{o}{(}\PYG{n+nb}{ }\PYG{n+nv}{\PYGZbs{}frac}\PYG{n+nb}{ a b }\PYG{n+nv}{\PYGZbs{}right}\PYG{o}{)}\PYG{l+s}{\PYGZdl{}}처럼 씁니다.
+강의할 때 어느 정도 설명해주세요 \PYG{k}{\PYGZbs{}verb}!\PYG{n+nb}{\PYGZca{}\PYGZca{}}!
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}document\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

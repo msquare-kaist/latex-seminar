@@ -1,0 +1,207 @@
+\documentclass[10pt]{beamer}
+\usepackage{tikz}
+\usepackage{kotex}
+\usepackage{amsmath,amsfonts,amssymb,mathrsfs,mathtools,adjustbox,float,graphicx}
+\usepackage{dtk-logos}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{minted}
+\usepackage{expl3}
+\usepackage{xparse}
+\usepackage{enumitem}
+\usepackage{forloop}
+\setlist[itemize,1]{label=\usebeamerfont*{itemize item}%
+  \usebeamercolor[fg]{itemize item}
+  \usebeamertemplate{itemize item}}
+\setlist[itemize,2]{label=\usebeamerfont*{itemize subitem}%
+  \usebeamercolor[fg]{itemize subitem}
+  \usebeamertemplate{itemize subitem}}
+\AtBeginEnvironment{minted}{\singlespacing\fontsize{9}{12}\selectfont}
+\newminted{latex}{breaklines=true,breaksymbolleft={}}
+\usemintedstyle{manni}
+\setminted{bgcolor=white!95!black}
+\setmintedinline{fontsize=\small}
+
+\setstretch{1.3}
+\usetikzlibrary{shapes.geometric}
+
+\makeatother
+\setbeamertemplate{footline}
+{
+	\leavevmode%
+	\hbox{%
+		\begin{beamercolorbox}[wd=.3\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+			\usebeamerfont{author in head/foot}\insertshortauthor
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=.6\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+			\usebeamerfont{title in head/foot}\insertshorttitle
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=.1\paperwidth,ht=2.25ex,dp=1ex,center]{date in head/foot}%
+			\insertframenumber{} / \inserttotalframenumber\hspace*{1ex}
+	\end{beamercolorbox}}%
+	\vskip0pt%
+}
+
+\makeatletter
+\setbeamertemplate{navigation symbols}{}
+
+\def\setfont{
+    \ifPDFTeX
+        \PackageError{MathLetter}{%
+            PDFTeX is not allowed to set fonts!
+        }{%
+            Use another engine, such as XeLaTeX or LuaLaTeX.
+        }
+    \fi
+    \setsansfont{Noto Sans CJK KR}[Scale=0.90,ItalicFont={*},ItalicFeatures={FakeSlant=.167}]
+    \setmainhangulfont[Scale=0.94]{Noto Serif CJK KR}
+    \setmainhangulfont
+        [ItalicFont={*},ItalicFeatures={FakeSlant=.167}]
+        {Noto Serif CJK KR}
+    \setsanshangulfont[Scale=0.94]{Noto Sans CJK KR}
+    \setsanshangulfont
+        [ItalicFont={*},ItalicFeatures={FakeSlant=.167}]
+        {Noto Sans CJK KR}[Scale=0.94]
+    \setmonohangulfont{Noto Sans Mono CJK KR}
+    \setmonohangulfont
+        [ItalicFont={*},ItalicFeatures={FakeSlant=.167}]
+        {Noto Sans Mono CJK KR}
+}
+
+\setfont
+
+
+% setting some colors for the theme
+\setbeamercolor{palette primary}{fg=black,bg=white}
+\setbeamercolor{palette secondary}{fg=black,bg=white}
+\setbeamercolor{structure}{fg=black,bg=white}
+\setbeamercolor{title in head/foot}{fg=black,bg=white}
+\setbeamercolor{date in head/foot}{fg=black,bg=white}
+
+
+
+% definition of the title page template
+\defbeamertemplate*{title page}{mytheme}[1][]
+{%
+  \begin{tikzpicture}[remember picture,overlay]
+  \filldraw[white]
+    (current page.north west) --
+    (current page.north east) --
+    ([xshift=0cm,yshift=-2cm]current page.north east)  --
+    ([xshift=0cm,yshift=-2cm]current page.north west) -- cycle
+    ;
+   \node[opacity=0.4] at (current page.center) 
+    {\includegraphics[scale=0.4]{msquare}};
+  \node[text=black,anchor=center,font=\sffamily\LARGE,text width=\paperwidth] 
+  at (current page.center)
+  (title)
+  {\begin{center}\inserttitle\end{center}};
+    
+    \node[text=black,anchor=south west,font=\sffamily\small,text width=.6\paperwidth] 
+  at ([xshift=-100pt,yshift=-1.5cm]current page.center)
+  (institute)
+  {\raggedright\insertinstitute};
+   
+  \node[anchor=west]
+  at ([xshift=-100pt,yshift=1cm]current page.south east)
+  {};
+  \node[text=black,font=\large\sffamily,anchor=south west]
+  at ([xshift=30pt,yshift=0.5cm]current page.south west)
+  (date)
+  {\insertdate};
+  \node[text=black,font=\large\sffamily,anchor=south west]
+  at ([yshift=5pt]date.north west)
+  (author)
+  {\insertauthor};
+  \end{tikzpicture}%
+}
+
+% remove navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+\definecolor{color0}{HTML}{FEABB7}
+\definecolor{color1}{HTML}{9797B9}
+\definecolor{color2}{HTML}{4B7AA3}
+
+% definition of the symbols used in itemize
+\newcommand\mysymbol{%
+  \begin{tikzpicture}[xscale=0.85]
+    \draw (1.75ex,0) node[star, star points=5, star point ratio=2.25, inner sep=1.3pt,anchor=outer point 3,fill=color0] {};          
+  \end{tikzpicture}%
+}
+\newcommand\mysymboli{%
+  \begin{tikzpicture}[xscale=0.85]
+    \draw (1.75ex,0) node[star, star points=5, star point ratio=2.25, inner sep=1.3pt,anchor=outer point 3,fill=color1] {};          
+  \end{tikzpicture}%
+}
+\newcommand\mysymbolii{%
+  \begin{tikzpicture}[xscale=0.85]
+    \draw (1.75ex,0) node[star, star points=5, star point ratio=2.25, inner sep=1.3pt,anchor=outer point 3,fill=color2] {};          
+  \end{tikzpicture}%
+}
+
+% definition of the itemize templates
+\defbeamertemplate*{itemize item}{mysymbol}{\small\raise0.5pt\hbox{\mysymbol}}
+\defbeamertemplate*{itemize subitem}{mysymbol}{\footnotesize\raise0.5pt\hbox{\mysymboli}}
+\defbeamertemplate*{itemize subsubitem}{mysymbol}{\footnotesize\raise0.5pt\hbox{\mysymbolii}}
+
+\title[]{\bf2019 편집부 \LaTeX\ 세미나}
+\author{}
+\date{}
+
+\institute{}
+
+\begin{document}
+
+\begin{frame}[plain]
+\maketitle
+\end{frame}
+
+\input{intro}
+
+\input{env}
+
+\begin{frame}[fragile]
+  \frametitle{매크로}
+  \framesubtitle{귀찮은 일은 싫어하는 사람들의 모임}
+  \begin{itemize}
+    \item<1-> 편집부장님: ``레이텍으로 구구단을 만들어 주세요!''
+    \item<1-> 안타까운 사람들: \mintinline[escapeinside=||]{latex}{$2 \times 2 = 4$, $2 \times 3 = 6$, ...}
+    \item<2-> 매크로를 배운 후:\vspace{-1em}
+    \begin{minted}{latex}
+\newcounter{left} \newcounter{right}
+\forloop{left}{2}{\value{left} < 10}{%
+  \noindent\forloop{right}{2}{\value{right} < 10}{%
+    $\arabic{left} \times \arabic{right} =
+      \the\numexpr\arabic{left} * \arabic{right}\relax$,
+  }
+  \par
+}
+    \end{minted}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{기본적인 매크로}
+  \framesubtitle{plain \TeX, \LaTeXe, \LaTeX\,3 버전}
+  \begin{itemize}
+    \item<1-> \mintinline[escapeinside=||]{latex}{\def\mymacro#1#2#3{\textit{#1}#2\textrm{#3}}}
+    \item<1-> 안타까운 사람들: \mintinline[escapeinside=||]{latex}{$2 \times 2 = 4$, $2 \times 3 = 6$, ...}
+    \item<2-> 매크로를 배운 후:\vspace{-1em}
+    \begin{minted}{latex}
+\newcounter{left} \newcounter{right}
+\forloop{left}{2}{\value{left} < 10}{%
+  \noindent\forloop{right}{2}{\value{right} < 10}{%
+    $\arabic{left} \times \arabic{right} =
+      \the\numexpr\arabic{left} * \arabic{right}\relax$,
+  }
+  \par
+}
+    \end{minted}
+  \end{itemize}
+\end{frame}
+
+
+\end{document}
+
+% \mintinline[escapeinside=||]{latex}{\textit{italic}}

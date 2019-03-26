@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}newcounter}\PYG{n+nb}{\PYGZob{}}left\PYG{n+nb}{\PYGZcb{}} \PYG{k}{\PYGZbs{}newcounter}\PYG{n+nb}{\PYGZob{}}right\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}forloop}\PYG{n+nb}{\PYGZob{}}left\PYG{n+nb}{\PYGZcb{}\PYGZob{}}2\PYG{n+nb}{\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}value}\PYG{n+nb}{\PYGZob{}}left\PYG{n+nb}{\PYGZcb{}} \PYGZlt{} 10\PYG{n+nb}{\PYGZcb{}\PYGZob{}}\PYG{c}{\PYGZpc{}}
+  \PYG{k}{\PYGZbs{}noindent\PYGZbs{}forloop}\PYG{n+nb}{\PYGZob{}}right\PYG{n+nb}{\PYGZcb{}\PYGZob{}}2\PYG{n+nb}{\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}value}\PYG{n+nb}{\PYGZob{}}right\PYG{n+nb}{\PYGZcb{}} \PYGZlt{} 10\PYG{n+nb}{\PYGZcb{}\PYGZob{}}\PYG{c}{\PYGZpc{}}
+    \PYG{l+s}{\PYGZdl{}}\PYG{n+nv}{\PYGZbs{}arabic}\PYG{n+nb}{\PYGZob{}left\PYGZcb{} }\PYG{n+nv}{\PYGZbs{}times}\PYG{n+nb}{ }\PYG{n+nv}{\PYGZbs{}arabic}\PYG{n+nb}{\PYGZob{}right\PYGZcb{} }\PYG{o}{=}
+\PYG{n+nb}{      }\PYG{n+nv}{\PYGZbs{}the\PYGZbs{}numexpr\PYGZbs{}arabic}\PYG{n+nb}{\PYGZob{}left\PYGZcb{} }\PYG{o}{*}\PYG{n+nb}{ }\PYG{n+nv}{\PYGZbs{}arabic}\PYG{n+nb}{\PYGZob{}right\PYGZcb{}}\PYG{n+nv}{\PYGZbs{}relax}\PYG{l+s}{\PYGZdl{}},
+  \PYG{n+nb}{\PYGZcb{}}
+  \PYG{k}{\PYGZbs{}par}
+\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

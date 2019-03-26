@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}itemize\PYG{n+nb}{\PYGZcb{}}
+  \PYG{k}{\PYGZbs{}item} 첫 번째
+  \PYG{k}{\PYGZbs{}item}\PYG{n+na}{[2]} 두 번째
+  \PYG{k}{\PYGZbs{}item}\PYG{n+na}{[\PYGZdl{}\PYGZbs{}gamma\PYGZdl{}]} wow
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}itemize\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}enumerate\PYG{n+nb}{\PYGZcb{}}[label=\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}roman*\PYGZbs{}arabic*}\PYG{n+nb}{\PYGZcb{}}]
+  \PYG{k}{\PYGZbs{}item} 자동으로
+  \PYG{k}{\PYGZbs{}item} 올라가는
+  \PYG{k}{\PYGZbs{}item} 번호
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}enumerate\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

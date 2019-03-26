@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}newtheorem}\PYG{n+nb}{\PYGZob{}}thm\PYG{n+nb}{\PYGZcb{}\PYGZob{}}Theorem\PYG{n+nb}{\PYGZcb{}} \PYG{c}{\PYGZpc{} basic usagae}
+\PYG{k}{\PYGZbs{}newtheorem}\PYG{n+nb}{\PYGZob{}}lem\PYG{n+nb}{\PYGZcb{}}[thm]\PYG{n+nb}{\PYGZob{}}Lemma\PYG{n+nb}{\PYGZcb{}} \PYG{c}{\PYGZpc{} shares the numbering w/ thm}
+
+\PYG{k}{\PYGZbs{}theoremstyle}\PYG{n+nb}{\PYGZob{}}definition\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}newtheorem}\PYG{n+nb}{\PYGZob{}}defn\PYG{n+nb}{\PYGZcb{}\PYGZob{}}Definition\PYG{n+nb}{\PYGZcb{}}[section] \PYG{c}{\PYGZpc{} Def section.def\PYGZus{}number}
+
+\PYG{k}{\PYGZbs{}theoremstyle}\PYG{n+nb}{\PYGZob{}}plain\PYG{n+nb}{\PYGZcb{}} \PYG{c}{\PYGZpc{} recover the theoremstyle}
+\PYG{k}{\PYGZbs{}newtheorem*}\PYG{n+nb}{\PYGZob{}}cor\PYG{n+nb}{\PYGZcb{}\PYGZob{}}Corollary\PYG{n+nb}{\PYGZcb{}} \PYG{c}{\PYGZpc{} no numbering (*)}
+
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}lem\PYG{n+nb}{\PYGZcb{}}[Lemma Name] This lemma is very awesome. \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}lem\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}proof\PYG{n+nb}{\PYGZcb{}} Leave as an exercise. \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}proof\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

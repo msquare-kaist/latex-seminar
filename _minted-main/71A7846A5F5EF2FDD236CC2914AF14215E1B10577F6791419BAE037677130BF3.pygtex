@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}ifmmode} \PYG{k}{\PYGZbs{}nfss}@text \PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}itshape} italic\PYG{n+nb}{\PYGZcb{}}\PYG{k}{\PYGZbs{}else} \PYG{k}{\PYGZbs{}hmode}@bgroup
+\PYG{k}{\PYGZbs{}text}@command \PYG{n+nb}{\PYGZob{}}italic\PYG{n+nb}{\PYGZcb{}}\PYG{k}{\PYGZbs{}itshape} \PYG{k}{\PYGZbs{}check}@icl italic\PYG{k}{\PYGZbs{}check}@icr
+\PYG{k}{\PYGZbs{}expandafter} \PYG{k}{\PYGZbs{}egroup} \PYG{k}{\PYGZbs{}fi} .
+\end{Verbatim}
