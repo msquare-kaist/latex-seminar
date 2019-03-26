@@ -1,0 +1,20 @@
+\setstretch{1.1}
+\begin{frame}[fragile]
+  \frametitle{\texttt{MathLetter.sty}}
+  \framesubtitle{디자인을 하나하나 만들고 있기는 힘드니까...}
+  \begin{itemize}
+    \item \url{https://github.com/msquare-kaist/mathletter-package}
+    \item 매뉴얼: \url{https://github.com/msquare-kaist/mathletter-package/blob/master/documents/manual.pdf}
+    \item 매뉴얼에 안 쓰여 있는 것: \texttt{\char`\\PrintBibliography}와 \texttt{\char`\\Footnote}
+    \begin{itemize}
+    \item \texttt{\char`\\PrintBibliography}: .tex 파일 상단 \mintinline{latex}{\documentclass, \usepackage} 밑에 참고문헌 .bib 파일을 추가하고 (\mintinline{latex}{\addbibresource{filename.bib}}) \mintinline{latex}{\end{document}} 전에 \mintinline{latex}{\PrintBibliography}를 입력하면 참고문헌이 나옵니다. (컴파일은 두 번 해야합니다.)
+    \item \texttt{\char`\\Footnote}: 그냥 \mintinline{latex}{\footnote}와 사용법은 같습니다. 여러 environment 안에 각주가 갇히는 현상을 방지하기 위한 매크로입니다.
+    \end{itemize}
+    \item \texttt{\char`\\MSquare}: \mintinline{latex}{\MSquare[1/2], \MSquare, \MSquare[2]}
+    \begin{itemize}
+    \item  \MSquare[1/2], \MSquare, \MSquare[2]
+    \item 아직 소수는 입력이 안 되는데 언젠간 누군가 고칠 예정입니다.
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+\setstretch{1.3}

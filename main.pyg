@@ -1,0 +1,7 @@
+% H means that it tries to put on the exact position
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=0.5\textwidth]{msquare}
+    \caption{Gorgeous}
+  \end{center}
+\end{figure}
