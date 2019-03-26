@@ -1,42 +1,42 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2019.3.5)  26 MAR 2019 15:59
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2019.2.8)  26 MAR 2019 20:32
  system commands enabled.
 **main.tex
 (./main.tex
 LaTeX2e <2018-12-01>
-Lua module: luaotfload-main 2019-02-14 2.96 luaotfload entry point
-Lua module: luaotfload-init 2019-02-14 2.96 luaotfload submodule / initializatio
+Lua module: luaotfload-main 2018-12-19 2.94 luaotfload entry point
+Lua module: luaotfload-init 2018-12-19 2.94 luaotfload submodule / initializatio
 n
-Lua module: lualibs 2019-02-14 2.64 ConTeXt Lua standard libraries.
-Lua module: lualibs-extended 2019-02-14 2.64 ConTeXt Lua libraries -- extended c
+Lua module: lualibs 2018-12-19 2.62 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2018-12-19 2.62 ConTeXt Lua libraries -- extended c
 ollection.
-Lua module: luaotfload-log 2019-02-14 2.96 luaotfload submodule / logging
-Lua module: luaotfload-parsers 2019-02-14 2.96 luaotfload submodule / filelist
-Lua module: luaotfload-configuration 2019-02-14 2.96 luaotfload submodule / conf
+Lua module: luaotfload-log 2018-12-19 2.94 luaotfload submodule / logging
+Lua module: luaotfload-parsers 2018-12-19 2.94 luaotfload submodule / filelist
+Lua module: luaotfload-configuration 2018-12-19 2.94 luaotfload submodule / conf
 ig file reader
 luaotfload | conf : Root cache directory is /home/utophii/.TinyTeX/texmf-var/lua
 tex-cache/generic/names.
-luaotfload | init : Loading fontloader “fontloader-2019-02-14.lua” from kpse
+luaotfload | init : Loading fontloader “fontloader-2018-12-19.lua” from kpse
 -resolved path “/home/utophii/.TinyTeX/texmf-dist/tex/luatex/luaotfload/fontlo
-ader-2019-02-14.lua”.
+ader-2018-12-19.lua”.
 Lua-only attribute luaotfload@state = 1
 Lua-only attribute luaotfload@noligature = 2
 Lua-only attribute luaotfload@syllabe = 3
 luaotfload | init : Context OpenType loader version “3.107”
 Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
 Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
-Lua module: luaotfload-loaders 2019-02-14 2.96 luaotfload submodule / callback h
+Lua module: luaotfload-loaders 2018-12-19 2.94 luaotfload submodule / callback h
 andling
 Inserting `luaotfload.define_font' at position 1 in `define_font'.
-Lua module: luaotfload-database 2019-02-14 2.96 luaotfload submodule / database
-Lua module: luaotfload-colors 2019-02-14 2.96 luaotfload submodule / color
+Lua module: luaotfload-database 2018-12-19 2.94 luaotfload submodule / database
+Lua module: luaotfload-colors 2018-12-19 2.94 luaotfload submodule / color
 Lua-only attribute luaotfload_color_attribute = 4
-Lua module: luaotfload-resolvers 2019-02-14 2.96 luaotfload submodule / resolver
+Lua module: luaotfload-resolvers 2018-12-19 2.94 luaotfload submodule / resolver
 s
 luaotfload | conf : Root cache directory is /home/utophii/.TinyTeX/texmf-var/lua
 tex-cache/generic/names.
-Lua module: luaotfload-features 2019-02-14 2.96 luaotfload submodule / features
-Lua module: luaotfload-letterspace 2019-02-14 2.96 luaotfload submodule / color
-Lua module: luaotfload-auxiliary 2019-02-14 2.96 luaotfload submodule / auxiliar
+Lua module: luaotfload-features 2018-12-19 2.94 luaotfload submodule / features
+Lua module: luaotfload-letterspace 2018-12-19 2.94 luaotfload submodule / color
+Lua module: luaotfload-auxiliary 2018-12-19 2.94 luaotfload submodule / auxiliar
 y functions
 Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
 font'.
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.070 seconds
+luaotfload | main : initialization completed in 0.074 seconds
 (/home/utophii/.TinyTeX/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/home/utophii/.TinyTeX/texmf-dist/tex/latex/beamer/beamerbasemodes.sty
@@ -690,7 +690,8 @@ Package: amsthm 2017/10/31 v2.20.4
 \beamer@dimb=\dimen186
 )
 (/home/utophii/.TinyTeX/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty
-))) (/home/utophii/.TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+))) (./preamble.tex
+(/home/utophii/.TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/home/utophii/.TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 Package: pgf 2019/02/02 v3.1.1 (3.1.1)
 
@@ -767,16 +768,17 @@ File: tikzlibrarytopaths.code.tex 2019/02/02 v3.1.1 (3.1.1)
 (/home/utophii/.TinyTeX/texmf-dist/tex/latex/cjk-ko/kotex.sty
 Package: kotex 2015/04/19 v1.6 Korean TeX (ko.TeX)
 
+(/home/utophii/.TinyTeX/texmf-dist/tex/latex/kotex-utf/kotex.cfg)
 (/home/utophii/.TinyTeX/texmf-dist/tex/luatex/luatexko/luatexko.sty
 Package: luatexko 2018/11/09 v1.22 Typesetting Korean with LuaLaTeX
 
 (/home/utophii/.TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.sty
 (/home/utophii/.TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 (/home/utophii/.TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2019-02-15 L3 programming layer (loader) 
+Package: expl3 2019-01-28 L3 programming layer (loader) 
 
 (/home/utophii/.TinyTeX/texmf-dist/tex/latex/l3kernel/expl3-code.tex
-Package: expl3 2019-02-15 L3 programming layer (code)
+Package: expl3 2019-01-28 L3 programming layer (code)
 \ucharcat@table=\catcodetable5
 \c_max_int=\count165
 \l_tmpa_int=\count166
@@ -924,7 +926,7 @@ Package: expl3 2019-02-15 L3 programming layer (code)
 \l__seq_internal_b_int=\count311
 )
 (/home/utophii/.TinyTeX/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
-File: l3pdfmode.def 2019-02-15 v L3 Experimental driver: PDF mode
+File: l3pdfmode.def 2019-01-28 v L3 Experimental driver: PDF mode
 \l__driver_color_stack_int=\count312
 ))
 Package: xparse 2018-10-17 L3 Experimental document command parser
@@ -934,10 +936,10 @@ Package: xparse 2018-10-17 L3 Experimental document command parser
 \l__xparse_mandatory_args_int=\count316
 \l__xparse_v_nesting_int=\count317
 )
-Package: fontspec 2019/02/12 v2.7b Font selection for XeLaTeX and LuaLaTeX
-Lua module: fontspec 2019/02/12 2.7b Font selection for XeLaTeX and LuaLaTeX
+Package: fontspec 2019/01/25 v2.7a Font selection for XeLaTeX and LuaLaTeX
+Lua module: fontspec 2019/01/25 2.7a Font selection for XeLaTeX and LuaLaTeX
 (/home/utophii/.TinyTeX/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
-Package: fontspec-luatex 2019/02/12 v2.7b Font selection for XeLaTeX and LuaLaTe
+Package: fontspec-luatex 2019/01/25 v2.7a Font selection for XeLaTeX and LuaLaTe
 X
 \l__fontspec_script_int=\count318
 \l__fontspec_language_int=\count319
@@ -962,14 +964,14 @@ File: tuenc.def 2018/08/11 v2.0j Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TU on input line 82.
 ))
 (/home/utophii/.TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.cfg)
-LaTeX Info: Redefining \itshape on input line 3776.
-LaTeX Info: Redefining \slshape on input line 3781.
-LaTeX Info: Redefining \scshape on input line 3786.
-LaTeX Info: Redefining \upshape on input line 3791.
-LaTeX Info: Redefining \em on input line 3821.
-LaTeX Info: Redefining \emph on input line 3846.
+LaTeX Info: Redefining \itshape on input line 3730.
+LaTeX Info: Redefining \slshape on input line 3735.
+LaTeX Info: Redefining \scshape on input line 3740.
+LaTeX Info: Redefining \upshape on input line 3745.
+LaTeX Info: Redefining \em on input line 3775.
+LaTeX Info: Redefining \emph on input line 3800.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 3896.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 3850.
 ))
 (/home/utophii/.TinyTeX/texmf-dist/tex/luatex/luatexko/luatexko-core.sty
 Package: luatexko-core 2018/11/09 v1.22 Typesetting Korean with LuaTeX
@@ -1388,9 +1390,9 @@ DFLT;slant=.167;+tlig;"
 e=DFLT;+tlig;"
 (fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
 
-LaTeX Info: Redefining \sffamily on input line 87.
+LaTeX Info: Redefining \sffamily on input line 86.
 LaTeX Font Info:    Font shape `TU/NotoSansCJKKR(0)/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 87.
+(Font)              scaled to size 8.99994pt on input line 86.
 
 Package fontspec Info: Could not resolve font "NotoSerifCJKKR/BI" (it probably
 (fontspec)             doesn't exist).
@@ -1459,20 +1461,18 @@ ant=.167;+tlig;"
 +tlig;"
 (fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
 
-
-Package fontspec Info: Could not resolve font "NotoSansCJKKR/BI" (it probably
-(fontspec)             doesn't exist).
-
-
-Package fontspec Info: Could not resolve font "NotoSansCJKKR/I" (it probably
-(fontspec)             doesn't exist).
-
 luaotfload | aux : font no 36 (nil) does not define feature smcp for script latn
  with language dflt
 luaotfload | aux : no font with id 36
 luaotfload | aux : font no 39 (nil) does not define feature smcp for script latn
  with language dflt
 luaotfload | aux : no font with id 39
+luaotfload | aux : font no 47 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : no font with id 47
+luaotfload | aux : font no 47 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : no font with id 47
 
 Package fontspec Info: Font family 'NotoSansCJKKR(1)' created for font 'Noto
 (fontspec)             Sans CJK KR' with options [Ligatures=TeX,Scale=0.94].
@@ -1488,9 +1488,17 @@ DFLT;+tlig;"
 (fontspec)             <->s*[0.94]"NotoSansCJKKR/B:mode=node;script=latn;languag
 e=DFLT;+tlig;"
 (fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[0.94]"NotoSansCJKKR/I:mode=node;script=latn;languag
+e=DFLT;+tlig;"
+(fontspec)             - 'italic small caps'  (m/itsc) with NFSS spec.: 
+(fontspec)             - 'bold italic' (bx/it) with NFSS spec.:
+(fontspec)             <->s*[0.94]"NotoSansCJKKR/BI:mode=node;script=latn;langua
+ge=DFLT;+tlig;"
+(fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/NotoSansCJKKR(1)/m/n' will be
-(Font)              scaled to size 9.40002pt on input line 87.
+(Font)              scaled to size 9.40002pt on input line 86.
 luaotfload | aux : font no 36 (nil) does not define feature smcp for script latn
  with language dflt
 luaotfload | aux : no font with id 36
@@ -1530,7 +1538,7 @@ e=DFLT;+tlig;"
 (fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/NotoSansCJKKR(2)/m/n' will be
-(Font)              scaled to size 9.40002pt on input line 87.
+(Font)              scaled to size 9.40002pt on input line 86.
 
 Package fontspec Info: Could not resolve font "NotoSansMonoCJKKR/BI" (it
 (fontspec)             probably doesn't exist).
@@ -1539,12 +1547,12 @@ Package fontspec Info: Could not resolve font "NotoSansMonoCJKKR/BI" (it
 Package fontspec Info: Could not resolve font "NotoSansMonoCJKKR/I" (it
 (fontspec)             probably doesn't exist).
 
-luaotfload | aux : font no 48 (nil) does not define feature smcp for script latn
+luaotfload | aux : font no 50 (nil) does not define feature smcp for script latn
  with language dflt
-luaotfload | aux : no font with id 48
-luaotfload | aux : font no 51 (nil) does not define feature smcp for script latn
+luaotfload | aux : no font with id 50
+luaotfload | aux : font no 53 (nil) does not define feature smcp for script latn
  with language dflt
-luaotfload | aux : no font with id 51
+luaotfload | aux : no font with id 53
 
 Package fontspec Info: Font family 'NotoSansMonoCJKKR(0)' created for font
 (fontspec)             'Noto Sans Mono CJK KR' with options [].
@@ -1561,18 +1569,18 @@ Package fontspec Info: Font family 'NotoSansMonoCJKKR(0)' created for font
 LT;"
 (fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: 
 
-luaotfload | aux : font no 48 (nil) does not define feature smcp for script latn
+luaotfload | aux : font no 50 (nil) does not define feature smcp for script latn
  with language dflt
-luaotfload | aux : no font with id 48
-luaotfload | aux : font no 51 (nil) does not define feature smcp for script latn
+luaotfload | aux : no font with id 50
+luaotfload | aux : font no 53 (nil) does not define feature smcp for script latn
  with language dflt
-luaotfload | aux : no font with id 51
-luaotfload | aux : font no 48 (nil) does not define feature smcp for script latn
+luaotfload | aux : no font with id 53
+luaotfload | aux : font no 50 (nil) does not define feature smcp for script latn
  with language dflt
-luaotfload | aux : no font with id 48
-luaotfload | aux : font no 51 (nil) does not define feature smcp for script latn
+luaotfload | aux : no font with id 50
+luaotfload | aux : font no 53 (nil) does not define feature smcp for script latn
  with language dflt
-luaotfload | aux : no font with id 51
+luaotfload | aux : no font with id 53
 
 Package fontspec Info: Font family 'NotoSansMonoCJKKR(1)' created for font
 (fontspec)             'Noto Sans Mono CJK KR' with options
@@ -1599,32 +1607,32 @@ LT;"
 (fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
 
 \raising=\skip70
- (./main.aux)
+) (./main.aux)
 \openout1 = main.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 277.
-LaTeX Font Info:    ... okay on input line 277.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 277.
-LaTeX Font Info:    ... okay on input line 277.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 277.
-LaTeX Font Info:    ... okay on input line 277.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 277.
-LaTeX Font Info:    ... okay on input line 277.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 277.
-LaTeX Font Info:    ... okay on input line 277.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 277.
-LaTeX Font Info:    ... okay on input line 277.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 277.
-LaTeX Font Info:    ... okay on input line 277.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 277.
-LaTeX Font Info:    ... okay on input line 277.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 277.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 277.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 5.
 
 (/home/utophii/.TinyTeX/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 277.
+LaTeX Font Info:    ... okay on input line 5.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -1679,7 +1687,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box88
-Package hyperref Info: Link coloring OFF on input line 277.
+Package hyperref Info: Link coloring OFF on input line 5.
 
 (/home/utophii/.TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1689,9 +1697,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count366
 )
-LaTeX Info: Redefining \ref on input line 277.
-LaTeX Info: Redefining \pageref on input line 277.
-LaTeX Info: Redefining \nameref on input line 277.
+LaTeX Info: Redefining \ref on input line 5.
+LaTeX Info: Redefining \pageref on input line 5.
+LaTeX Info: Redefining \nameref on input line 5.
 
 (./main.out) (./main.out)
 \@outlinefile=\write7
@@ -1700,44 +1708,44 @@ LaTeX Info: Redefining \nameref on input line 277.
 \symnumbers=\mathgroup7
 \sympureletters=\mathgroup8
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 277.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 277.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 5.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 5.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 277.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 5.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 277.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 277.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 5.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 5.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/NotoSansCJKKR(0)/m/n on input line 2
-77.
+(Font)                  OT1/cmss/m/n --> TU/NotoSansCJKKR(0)/m/n on input line 5
+.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> TU/NotoSansCJKKR(0)/m/n on input line 
-277.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 277.
+5.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 5.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 277.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 5.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/m/it on input line 277.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 277.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/m/it on input line 5.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 5.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 277.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 5.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 277.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 5.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 277.
+(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 5.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  TU/lmr/m/it --> TU/lmr/bx/it on input line 277.
+(Font)                  TU/lmr/m/it --> TU/lmr/bx/it on input line 5.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 277.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 5.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  TU/lmr/bx/n --> TU/lmr/bx/n on input line 277.
+(Font)                  TU/lmr/bx/n --> TU/lmr/bx/n on input line 5.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  TU/NotoSansCJKKR(0)/m/n --> TU/NotoSansCJKKR(0)/bx/n on 
-input line 277.
+input line 5.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  TU/lmr/m/it --> TU/lmr/bx/it on input line 277.
+(Font)                  TU/lmr/m/it --> TU/lmr/bx/it on input line 5.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  TU/lmtt/m/n --> TU/lmtt/bx/n on input line 277.
+(Font)                  TU/lmtt/m/n --> TU/lmtt/bx/n on input line 5.
 
 (/home/utophii/.TinyTeX/texmf-dist/tex/latex/translator/translator-basic-dictio
 nary-English.dict
@@ -1769,122 +1777,122 @@ Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 
 \symlegacymaths=\mathgroup9
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 277.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 277.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 277.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 277.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 277.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 277.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 277.
-LaTeX Font Info:    Redeclaring math accent \check on input line 277.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 277.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 277.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 277.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 277.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 277.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 277.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 277.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 277.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 277.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 277.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 277.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 277.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 277.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 277.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 277.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 277.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 5.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 5.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 5.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 5.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 5.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 5.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 5.
+LaTeX Font Info:    Redeclaring math accent \check on input line 5.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 5.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 5.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 5.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 5.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 277.
+(Font)              `operators' in the math version `normal' on input line 5.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 277.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 5.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 277.
+(Font)              `operators' in the math version `bold' on input line 5.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 277.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 5.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 277.
-LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 277.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 5.
+LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 5.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  TU/lmr/m/it --> TU/lmr/m/it on input line 277.
+(Font)                  TU/lmr/m/it --> TU/lmr/m/it on input line 5.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  TU/lmr/bx/n --> TU/lmr/bx/n on input line 277.
+(Font)                  TU/lmr/bx/n --> TU/lmr/bx/n on input line 5.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
 (Font)                  TU/NotoSansCJKKR(0)/m/n --> TU/NotoSansCJKKR(0)/m/n on i
-nput line 277.
+nput line 5.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  TU/lmtt/m/n --> TU/lmtt/m/n on input line 277.
+(Font)                  TU/lmtt/m/n --> TU/lmtt/m/n on input line 5.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 277.
+(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 5.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  TU/lmr/bx/it --> TU/lmr/bx/it on input line 277.
+(Font)                  TU/lmr/bx/it --> TU/lmr/bx/it on input line 5.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  TU/NotoSansCJKKR(0)/bx/n --> TU/NotoSansCJKKR(0)/bx/n on
- input line 277.
+ input line 5.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  TU/lmtt/bx/n --> TU/lmtt/bx/n on input line 277.
+(Font)                  TU/lmtt/bx/n --> TU/lmtt/bx/n on input line 5.
  ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 277.
+LaTeX Info: Redefining \selectfont on input line 5.
 \symmathhangul=\mathgroup10
 LaTeX Font Info:    Overwriting symbol font `mathhangul' in version `bold'
 (Font)                  TU/NotoSansCJKKR(2)/m/n --> TU/NotoSansCJKKR(2)/bx/n on 
-input line 277.
+input line 5.
  (./main.nav)
 LaTeX Font Info:    Font shape `TU/NotoSansCJKKR(0)/m/n' will be
-(Font)              scaled to size 4.49997pt on input line 277.
+(Font)              scaled to size 4.49997pt on input line 5.
 LaTeX Font Info:    Font shape `TU/NotoSansCJKKR(2)/m/n' will be
-(Font)              scaled to size 4.70001pt on input line 277.
+(Font)              scaled to size 4.70001pt on input line 5.
 <msquare.png, id=34, 871.255pt x 685.56125pt>
 File: msquare.png Graphic file (type png)
 <use msquare.png>
-Package luatex.def Info: msquare.png  used on input line 281.
+Package luatex.def Info: msquare.png  used on input line 9.
 (luatex.def)             Requested size: 348.49583pt x 274.21964pt.
 LaTeX Font Info:    Font shape `TU/NotoSansCJKKR(0)/m/n' will be
-(Font)              scaled to size 15.55188pt on input line 281.
+(Font)              scaled to size 15.55188pt on input line 9.
 LaTeX Font Info:    Font shape `TU/NotoSansCJKKR(2)/m/n' will be
-(Font)              scaled to size 16.24324pt on input line 281.
+(Font)              scaled to size 16.24324pt on input line 9.
 LaTeX Font Info:    Font shape `TU/NotoSansCJKKR(0)/bx/n' will be
-(Font)              scaled to size 15.55188pt on input line 281.
+(Font)              scaled to size 15.55188pt on input line 9.
 LaTeX Font Info:    Font shape `TU/NotoSansCJKKR(2)/bx/n' will be
-(Font)              scaled to size 16.24324pt on input line 281.
-LaTeX Font Info:    Try loading font information for U+msa on input line 281.
+(Font)              scaled to size 16.24324pt on input line 9.
+LaTeX Font Info:    Try loading font information for U+msa on input line 9.
 
 (/home/utophii/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 281.
+LaTeX Font Info:    Try loading font information for U+msb on input line 9.
 
 (/home/utophii/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 281.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 9.
 
 (/home/utophii/.TinyTeX/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Font shape `TU/NotoSansCJKKR(2)/m/n' will be
-(Font)              scaled to size 11.28003pt on input line 281.
+(Font)              scaled to size 11.28003pt on input line 9.
 LaTeX Font Info:    Font shape `TU/NotoSansCJKKR(0)/bx/n' will be
-(Font)              scaled to size 10.79993pt on input line 281.
+(Font)              scaled to size 10.79993pt on input line 9.
 LaTeX Font Info:    Font shape `TU/NotoSansCJKKR(2)/bx/n' will be
-(Font)              scaled to size 11.28003pt on input line 281.
+(Font)              scaled to size 11.28003pt on input line 9.
 LaTeX Font Info:    Font shape `TU/NotoSansCJKKR(0)/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 281.
+(Font)              scaled to size 8.09995pt on input line 9.
 LaTeX Font Info:    Font shape `TU/NotoSansCJKKR(2)/m/n' will be
-(Font)              scaled to size 8.46002pt on input line 281.
+(Font)              scaled to size 8.46002pt on input line 9.
 LaTeX Font Info:    Font shape `TU/NotoSansCJKKR(0)/m/n' will be
-(Font)              scaled to size 10.79993pt on input line 281.
+(Font)              scaled to size 10.79993pt on input line 9.
  [1
 
 {/home/utophii/.TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}<./msquare.
 png>]
 LaTeX Font Info:    Font shape `TU/NotoSansCJKKR(0)/m/n' will be
-(Font)              scaled to size 12.9599pt on input line 283.
+(Font)              scaled to size 12.9599pt on input line 11.
 LaTeX Font Info:    Font shape `TU/NotoSansCJKKR(2)/m/n' will be
-(Font)              scaled to size 13.53603pt on input line 283.
+(Font)              scaled to size 13.53603pt on input line 11.
 LaTeX Font Info:    Font shape `TU/NotoSansCJKKR(0)/m/n' will be
-(Font)              scaled to size 3.59998pt on input line 283.
+(Font)              scaled to size 3.59998pt on input line 11.
 LaTeX Font Info:    Font shape `TU/NotoSansCJKKR(2)/m/n' will be
-(Font)              scaled to size 3.76001pt on input line 283.
+(Font)              scaled to size 3.76001pt on input line 11.
 
 [2
 
@@ -2533,331 +2541,13 @@ LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
 ])
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\leavevmode@ifvmode' on input line 289.
+(hyperref)                removing `\leavevmode@ifvmode' on input line 17.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \kern 1.5003pt
-(hyperref)                removed on input line 289.
+(hyperref)                removed on input line 17.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\leavevmode@ifvmode' on input line 289.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \kern 1.5003pt
-(hyperref)                removed on input line 289.
-
-[29
-
-] (./macro.tex
-\openout4 = main.vrb
- (./main.vrb
-\openout6 = main.pyg
-
-(./_minted-main/DA711312E4D7E947A60BF288F5B977A258975309F39BEB49258849F8D4BBCD0
-6.pygtex)
-\openout5 = main.pyg
-
-(./_minted-main/2C964A4A16F2C88C1129045720448FE65E1B10577F6791419BAE037677130BF
-3.pygtex)) [30
-
-] (./main.vrb
-\openout6 = main.pyg
-
-(./_minted-main/DA711312E4D7E947A60BF288F5B977A258975309F39BEB49258849F8D4BBCD0
-6.pygtex)
-\openout5 = main.pyg
-
-(./_minted-main/2C964A4A16F2C88C1129045720448FE65E1B10577F6791419BAE037677130BF
-3.pygtex)) [31
-
-]
-\openout4 = main.vrb
- (./main.vrb
-\openout6 = main.pyg
-
-(./_minted-main/68A3ECFCE0B3CD7B9B4F8BE29791118858975309F39BEB49258849F8D4BBCD0
-6.pygtex)
-\openout6 = main.pyg
-
-(./_minted-main/EF275BD966DC2EA83EB7E2FFE5FA867A58975309F39BEB49258849F8D4BBCD0
-6.pygtex)
-\openout6 = main.pyg
-
-(./_minted-main/EB5759F43190391401F57BDB16AB48A258975309F39BEB49258849F8D4BBCD0
-6.pygtex)
-\openout6 = main.pyg
-
-(./_minted-main/F655B4CF6C3AB6E4F0E1844A0A0FED8458975309F39BEB49258849F8D4BBCD0
-6.pygtex)
-\openout6 = main.pyg
-
-(./_minted-main/5A7320EA5F80207AB75256170514F00258975309F39BEB49258849F8D4BBCD0
-6.pygtex)
-\openout6 = main.pyg
-
-(./_minted-main/BFD54DDF216A32B5FDD05A34A5F7E95D58975309F39BEB49258849F8D4BBCD0
-6.pygtex)) [32
-
-]
-\openout4 = main.vrb
- (./main.vrb
-\openout6 = main.pyg
-
-(./_minted-main/5D7E7139229534A39E1C1AE6905E4BC258975309F39BEB49258849F8D4BBCD0
-6.pygtex)
-\openout6 = main.pyg
-
-(./_minted-main/DAF9CD15DA54D9443E3F9E826AE0B34B58975309F39BEB49258849F8D4BBCD0
-6.pygtex)
-\openout6 = main.pyg
-
-(./_minted-main/0CEEAD8D9E18AED5B2F91DB47046C01358975309F39BEB49258849F8D4BBCD0
-6.pygtex)
-\openout6 = main.pyg
-
-(./_minted-main/410491535BCEDCF506DFC40D188AA0DA58975309F39BEB49258849F8D4BBCD0
-6.pygtex)
-\openout6 = main.pyg
-
-(./_minted-main/515100244FDEB0ACD872E4831FA90E2F58975309F39BEB49258849F8D4BBCD0
-6.pygtex))
-LaTeX Font Info:    Font shape `TU/NotoSansCJKKR(0)/m/n' will be
-(Font)              scaled to size 5.39996pt on input line 48.
- [33
-
-]
-\openout4 = main.vrb
- (./main.vrb
-\openout6 = main.pyg
-
-(./_minted-main/124C324DDDE4F43ACC9153E31AFC0DE458975309F39BEB49258849F8D4BBCD0
-6.pygtex)
-\openout6 = main.pyg
-
-(./_minted-main/6D5732EDABD9A6284A0BBFC868CADE4058975309F39BEB49258849F8D4BBCD0
-6.pygtex)
-\openout6 = main.pyg
-
-(./_minted-main/0CEEAD8D9E18AED5B2F91DB47046C01358975309F39BEB49258849F8D4BBCD0
-6.pygtex)
-\openout6 = main.pyg
-
-(./_minted-main/BDF35BE47AB8B2C8ED40A9CF03B2E25658975309F39BEB49258849F8D4BBCD0
-6.pygtex)) [34
-
-]
-\openout4 = main.vrb
- (./main.vrb
-\openout6 = main.pyg
-
-(./_minted-main/0C2DEE33AF0E50D65DFC85C91AAC4D5658975309F39BEB49258849F8D4BBCD0
-6.pygtex)
-\openout6 = main.pyg
-
-(./_minted-main/B7A966BA1BF3462953B69BDAD7ACD89758975309F39BEB49258849F8D4BBCD0
-6.pygtex)) [35
-
-]
-\openout4 = main.vrb
- (./main.vrb
-\openout6 = main.pyg
-
-(./_minted-main/5C2C9B43E3D49E4288142C4DA1CE754F58975309F39BEB49258849F8D4BBCD0
-6.pygtex)
-\openout6 = main.pyg
-
-(./_minted-main/7EB4F8B20B4D0FDD0878EAB5964DCB7858975309F39BEB49258849F8D4BBCD0
-6.pygtex)
-\openout6 = main.pyg
-
-(./_minted-main/67B97FE02BD238620130B495EDD747BF58975309F39BEB49258849F8D4BBCD0
-6.pygtex)
-\openout6 = main.pyg
-
-(./_minted-main/C8671E06D7F50F6521C1076D6F8A032B58975309F39BEB49258849F8D4BBCD0
-6.pygtex)
-\openout6 = main.pyg
-
-(./_minted-main/856E9D0B78447AF86D72C1154C71C30258975309F39BEB49258849F8D4BBCD0
-6.pygtex)) [36
-
-]
-\openout4 = main.vrb
- (./main.vrb
-\openout5 = main.pyg
-
-(./_minted-main/39C61F4819C0DF8880CEAF9304731F995E1B10577F6791419BAE037677130BF
-3.pygtex
-LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <8> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 2.
-)) [37
-
-]
-\openout4 = main.vrb
- (./main.vrb
-\openout6 = main.pyg
-
-(./_minted-main/D9B4C594E0779E3E5A96471B9093B7065E1B10577F6791419BAE037677130BF
-3.pygtex)
-\openout6 = main.pyg
-
-(./_minted-main/0884A32C4BC65C17D7CE8167964735185E1B10577F6791419BAE037677130BF
-3.pygtex)
-\openout6 = main.pyg
-
-(./_minted-main/8942B1AC824AF87E90D2BD8C9924D9235E1B10577F6791419BAE037677130BF
-3.pygtex)
-\openout6 = main.pyg
-
-(./_minted-main/AEC268C4B529558881240E49DB1F97335E1B10577F6791419BAE037677130BF
-3.pygtex)) [38
-
-]
-\openout4 = main.vrb
- (./main.vrb
-\openout6 = main.pyg
-
-(./_minted-main/DE4FF7E2A1FC1069F33D277C23ADB6995E1B10577F6791419BAE037677130BF
-3.pygtex)
-\openout6 = main.pyg
-
-(./_minted-main/F93D6743ABA25C5EC80E371E76514C885E1B10577F6791419BAE037677130BF
-3.pygtex)
-\openout6 = main.pyg
-
-(./_minted-main/FFFB4419083B582E0C1E92497EFF945B5E1B10577F6791419BAE037677130BF
-3.pygtex)
-\openout6 = main.pyg
-
-(./_minted-main/B6BAE30A1CF1B1510C9A98EAC70FBE3A5E1B10577F6791419BAE037677130BF
-3.pygtex)
-\openout6 = main.pyg
-
-(./_minted-main/D796F4E37D8DB0E21F6C9552F0C05BC35E1B10577F6791419BAE037677130BF
-3.pygtex)
-\openout6 = main.pyg
-
-(./_minted-main/EE52E983116AE4879AB95865D54FAFE05E1B10577F6791419BAE037677130BF
-3.pygtex)
-\openout5 = main.pyg
-
-(./_minted-main/DA32504B37A782CB43FB2DD0A548943A5E1B10577F6791419BAE037677130BF
-3.pygtex))
-Overfull \vbox (0.18501pt too high) detected at line 170
- []
-
-[39
-
-]
-\openout4 = main.vrb
- (./main.vrb
-Overfull \hbox (23.46013pt too wide) in paragraph at lines 4--5
-\TU/lmtt/m/n/10 \rule\raisebox\kern\hskip\vskip\glueexpr\allowdisplaybreaks,...
-  
- []
-
-) [40
-
-]) [41
-
-]
-\openout4 = main.vrb
- (./main.vrb
-\openout6 = main.pyg
-
-(./_minted-main/BB1808050024DF127F869A29C5E67E495E1B10577F6791419BAE037677130BF
-3.pygtex)
-\openout6 = main.pyg
-
-(./_minted-main/9BF06DD0F38C619C2010321E9F74DF1E5E1B10577F6791419BAE037677130BF
-3.pygtex)
-\openout6 = main.pyg
-
-(./_minted-main/E140DA65018884348D03B6AA65D8E7225E1B10577F6791419BAE037677130BF
-3.pygtex)
-\openout6 = main.pyg
-
-(./_minted-main/A0B903CDBA37E93A912F305C287343D35E1B10577F6791419BAE037677130BF
-3.pygtex)
-\openout6 = main.pyg
-
-(./_minted-main/A5F0EF0B66B9960B8306A19E0307DC625E1B10577F6791419BAE037677130BF
-3.pygtex)
-\openout6 = main.pyg
-
-(./_minted-main/F37B5DEED5843B0B6DEBBC16E300759C5E1B10577F6791419BAE037677130BF
-3.pygtex)) [42
-
-] [43
-
-]
-\tf@nav=\write8
-
-\openout8 = main.nav
-\tf@toc=\write9
-
-\openout9 = main.toc
-\tf@snm=\write10
-
-\openout10 = main.snm
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 315.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 315.
- (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 315.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 315.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D9292FFD1828A5F1AB6AD9247BCA810D;234.
-
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-)
-
-Here is how much of LuaTeX's memory you used:
- 42057 strings out of 494383
- 100000,1144653 words of node,token memory allocated
- 2128 words of node memory still in use:
-   26 hlist, 9 vlist, 2 rule, 1 local_par, 42 glue, 4 kern, 8 penalty, 2 glyph, 
-331 attribute, 65 glue_spec, 112 attribute_list, 3 write, 28 pdf_literal, 1 pdf_
-start_link, 1 pdf_end_link, 3 pdf_action, 10 pdf_colorstack nodes
-   avail lists: 1:4,2:14066,3:1786,4:600,5:269,6:35,7:2599,8:93,9:670,10:34,11:2
-3,12:1
- 41183 multiletter control sequences out of 65536+600000
- 214 fonts using 725269863 bytes
- 60i,15n,72p,787b,1206s stack positions out of 5000i,500n,10000p,200000b,100000s
-</home/utophii/.TinyTeX/texmf-dist/fonts/opentype/public/lm/lmmono8-regular.otf>
-</home/utophii/.TinyTeX/texmf-dist/fonts/opentype/public/lm/lmroman7-italic.otf>
-</home/utophii/.TinyTeX/texmf-dist/fonts/opentype/public/lm/lmmono12-regular.otf
-></home/utophii/.TinyTeX/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.o
-tf></home/utophii/.TinyTeX/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.
-otf></home/utophii/.TinyTeX/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.o
-tf></usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc></usr/share/fonts/op
-entype/noto/NotoSerifCJK-Regular.ttc></home/utophii/.TinyTeX/texmf-dist/fonts/op
-entype/public/lm/lmmono10-italic.otf></home/utophii/.TinyTeX/texmf-dist/fonts/op
-entype/public/lm/lmmonolt10-bold.otf></usr/share/fonts/opentype/noto/NotoSansCJK
--Regular.ttc></usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc></home/utop
-hii/.TinyTeX/texmf-dist/fonts/opentype/public/lm/lmmono9-regular.otf></home/utop
-hii/.TinyTeX/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></usr/shar
-e/fonts/opentype/noto/NotoSansCJK-Regular.ttc></usr/share/fonts/opentype/noto/No
-toSansCJK-Regular.ttc></usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc></usr
-/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc></home/utophii/.TinyTeX/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/utophii/.TinyTeX/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/utophii/.TinyTeX/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmib10.pfb></home/utophii/.TinyTeX/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr10.pfb></home/utophii/.TinyTeX/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr7.pfb></home/utophii/.TinyTeX/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy10.pfb></home/utophii/.TinyTeX/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmsy7.pfb></home/utophii/.TinyTeX/texmf-dist/fonts/type1/public/ams
-fonts/euler/eufm10.pfb></home/utophii/.TinyTeX/texmf-dist/fonts/type1/public/ams
-fonts/symbols/msbm10.pfb></home/utophii/.TinyTeX/texmf-dist/fonts/type1/public/r
-sfs/rsfs10.pfb>
-Output written on main.pdf (43 pages, 309415 bytes).
-
-PDF statistics: 510 PDF objects out of 1000 (max. 8388607)
- 399 compressed objects within 4 object streams
- 92 named destinations out of 1000 (max. 131072)
- 56 words of extra memory for PDF output out of 10000 (max. 100000000)
-
+(hyperref)                removing `\leavev
