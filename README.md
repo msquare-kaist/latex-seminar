@@ -35,14 +35,15 @@ tlmgr install adjustbox amscls amsfonts amsmath babel beamer biblatex bibtex boo
 \usepackage{kotex}
 \title{제목}
 
+\makeatletter
+\let\thetitle=\@title
+\makeatother
 \begin{document}
 \maketitle
 
 안녕하세요? \LaTeX을 배우면 좋은 일이 있을 거예요. % 아닐 수도..
 
-\makeatletter
-당신이 입력했던 제목입니다: \@title.\footnote{신기한가요??}
-\makeatother
+당신이 입력했던 제목입니다: \thetitle.\footnote{신기한가요??}
 \end{document}
 ```
 

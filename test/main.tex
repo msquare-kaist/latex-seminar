@@ -1,0 +1,27 @@
+\documentclass{article}
+
+\usepackage{kotex,amsmath}
+\title{hi}
+\author{Me}
+\date{\today}
+
+\makeatletter
+\let\newtitle\@title
+\let\newauthor\@author
+\let\newdate\@date
+\makeatother
+
+
+\begin{document}
+  \maketitle
+
+  \makeatletter
+  
+  
+
+The title is \newtitle
+It was written by \@author\space on \@date
+  \makeatother
+
+
+\end{document}
