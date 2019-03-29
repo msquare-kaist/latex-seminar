@@ -35,9 +35,9 @@ tlmgr install adjustbox amscls amsfonts amsmath babel beamer biblatex bibtex boo
 \usepackage{kotex}
 \title{제목}
 
-\makeatletter
+\makeatletter % 원래 @은 매크로 이름에 쓸 수 없는데 쓸 수 있게 해주는 매크로입니다.
 \let\thetitle=\@title
-\makeatother
+\makeatother % 다시 @을 매크로 이름에 쓸 수 없게 만듭니다. (내부 매크로 보호)
 \begin{document}
 \maketitle
 
