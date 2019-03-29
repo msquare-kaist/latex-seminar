@@ -253,14 +253,15 @@ Radical of an ideal $\sqrt{\mathfrak a}$
     \framesubtitle{}
     \begin{itemize}
       \item<1-> \TeX은 띄어쓰기에 민감합니다. 예를 들어 괄호 앞뒤로 띄어쓰기를 하는지가 상관없는 C나 Python 등 다른 언어와 달리, \TeX\ 문서를 쓸 때엔 띄어쓰기를 주의해야 합니다.
-      \item<2-> 텍스트 모드에서, 띄어쓰기는 잘 없어지지 않습니다. 띄어쓰기가 없어지는 경우는:
+      \item<2-> 텍스트 모드에서 띄어쓰기가 없어지는 경우는:
       \begin{itemize}
         \item 두 개 이상 연속 띄어쓰기가 있을 때 한 개만 남습니다. 즉 띄어쓰기 여러 개를 쓰려면 \mintinline{latex}{\ \ \ }와 같이 써야 합니다.
         \item 한 줄의 맨 앞{\,\small(leading)\normalsize\,}에 있는 띄어쓰기는 모두 무시됩니다.
+        \item 매크로 뒤의 공백은 (특별한 처리를 하지 않은 이상) 무시됩니다. \mintinline{latex}{\TeX \TeX} $\to$ \TeX \TeX
       \end{itemize}
       \item<3-> 텍스트 모드에서, 줄바꿈의 위아래 줄이 비어있지 않으면 그 줄바꿈은 띄어쓰기로 처리됩니다.
       \begin{itemize}
-        \item 이 띄어쓰기를 없애려면, 코드 가독성을 위해 줄바꿈을 했지만 띄어쓰기는 원하지 않는다면, 그 줄 끝에 주석 기호 \texttt{\%}를 붙이면 그 줄바꿈이 주석 처리되어 사라집니다. 참고로, 다음 줄의 앞에 있는 띄어쓰기까지 모두 사라집니다.
+        \item 이 띄어쓰기를 없애려면 그 줄 끝에 주석 기호 \texttt{\%}를 붙이면 그 줄바꿈이 주석 처리되어 사라집니다. 참고로, 다음 줄의 앞에 있는 띄어쓰기까지 모두 사라집니다.
       \end{itemize}
     \end{itemize}
   \end{frame}

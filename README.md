@@ -168,8 +168,8 @@ Radical of an ideal $\sqrt{\mathfrak a}$
 \makeatletter
 % supposing #1 >= #2 > 0
 \newcommand{\euclidalgorithm}[2]{             % example: \euclidalgorithm{60}{33}
-    \gdef\a{#1}
-    \gdef\b{#2}
+    \gdef\@@a{#1}
+    \gdef\@@b{#2}
     \[
     \begin{array}{r@{\;=\;}r@{\;\cdot\;}l@{}l@{}l@{\quad}|@{\quad}r@{}r@{}r@{}r@{}r}
         \euclid@lgorithm                                    % initialise
@@ -189,8 +189,8 @@ Radical of an ideal $\sqrt{\mathfrak a}$
     }
     {%
         % print a line
-        #1 & #2 & #3 \;&\;+\;&\; #4 & #4 &\;=\;&\;\a \;\cdot\; &
-        \,{\ifnum#7<\z@ (#7) \else #7\hphantom{)}\fi} + \b \;\cdot\;&
+        #1 & #2 & #3 \;&\;+\;&\; #4 & #4 &\;=\;&\;\@@a \;\cdot\; &
+        \,{\ifnum#7<\z@ (#7) \else #7\hphantom{)}\fi} + \@@b \;\cdot\;&
         \,{\ifnum#8<\z@ (#8) \else #8\hphantom{)}\fi} \\%
         % call itself recursively
         \euclid@lgorithm

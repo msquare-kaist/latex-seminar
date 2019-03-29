@@ -9,19 +9,18 @@
 \let\newtitle\@title
 \let\newauthor\@author
 \let\newdate\@date
+\def\titles{\@title}
 \makeatother
 
 
 \begin{document}
+\titles
+
   \maketitle
 
-  \makeatletter
-  
-  
+  \def\a{3}
 
-The title is \newtitle
-It was written by \@author\space on \@date
-  \makeatother
+  \a   \LaTeX
 
-
+  \titles
 \end{document}

@@ -14,7 +14,7 @@
 \makeatother\ExplSyntaxOff
     \end{minted}
     \item<3-> 생각해 보면 나누어질 수와 나눌 수, 몫, 나머지, 이전 두 단계의 결과를 저장해야 되니까 10 개의 argument를 사용해야 하는데, 이것은 불가능합니다. 따라서 나누어질 수와 나눌 수는 전역변수로 저장하도록 합시다.
-    \item[]<3-> \mintinline{latex}{\gdef\@@@@a{#1}\gdef\@@@@b{#2}}
+    \item[]<3-> \mintinline{latex}{\gdef\@@a{#1}\gdef\@@b{#2}}
   \end{itemize}
 \end{frame}
 
@@ -67,8 +67,8 @@
 \newcommand{\euclid@lgorithm}[8]{
   \int_compare:nNnTF {#4} = {0} { ... } {
     % print a line
-    #1 & #2 & #3 \;&\;+\;&\; #4 & #4 &\;=\;&\;\a \;\cdot\; &
-    \,{\ifnum#7<\z@ (#7) \else #7\hphantom{)}\fi} + \b \;\cdot\;&
+    #1 & #2 & #3 \;&\;+\;&\; #4 & #4 &\;=\;&\;\@@a\;\cdot\; &
+    \,{\ifnum#7<\z@ (#7) \else #7\hphantom{)}\fi}+\@@b\;\cdot\;&
     \,{\ifnum#8<\z@ (#8) \else #8\hphantom{)}\fi} \\%
     % call itself recursively
     \euclid@lgorithm

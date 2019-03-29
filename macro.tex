@@ -133,6 +133,9 @@
     \item \mintinline{latex}{\setcounter{CounterName}{value}} 카운터 값 지정
     \item \mintinline{latex}{\addtocounter{CounterName}{value}} 카운터에 값을 더하기 (음수도 가능)
     \item \mintinline{latex}{\value{CounterName}} 카운터 값 출력
+    \item \mintinline{latex}{\arabic{CounterName}} 카운터 값을 아라비아 숫자로 출력
+    \item \mintinline{latex}{\roman{CounterName}} 카운터 값을 로마 숫자로 출력
+    \item \mintinline{latex}{\alph{CounterName}} 카운터 값을 알파벳으로 출력
   \end{itemize}
 \end{frame}
 
@@ -174,11 +177,13 @@
 \begin{frame}[fragile]
   \frametitle{커버하지 않은 내용}
   \framesubtitle{너무 많아요}
-  \texttt{\char`\\label\char`\\ref\char`\\url\char`\\definecolor\char`\\textcolor\char`\\color\char`\\newenvironment\\\char`\\expandafter\char`\\noexpand\char`\\IfNoValueTF\char`\\IfBooleanTF\char`\\makeatletter\\\char`\\makeatother\char`\\@author\char`\\@date\char`\\begin\{tikz\}...\char`\\end\{tikz\}\char`\\edef\\\char`\\@gobble\char`\\relax\char`\\dimexpr\char`\\numexpr
-  \char`\\the\char`\\meaning\char`\\global\\\char`\\xdef\char`\\csname...\char`\\endcsname\char`\\@firstofone\char`\\z@\char`\\@car\char`\\@cdr\char`\\@nil\\\char`\\toks@\char`\\loop\char`\\@for\char`\\g@addto@macro\char`\\parskip\char`\\parindent\char`\\protected\\ \char`\\unexpanded\char`\\renewcommand\char`\\RedeclareSectionCommand\char`\\hbox\char`\\pbox\\\char`\\rule\char`\\raisebox\char`\\kern\char`\\hskip\char`\\vskip\char`\\glueexpr\char`\\allowdisplaybreaks,...}
+  \texttt{\char`\\label\char`\\ref\char`\\url\char`\\definecolor\char`\\textcolor\char`\\color\char`\\newenvironment\\
+  \char`\\expandafter\char`\\noexpand\char`\\IfNoValueTF\char`\\IfBooleanTF\char`\\begin\{tikz\}\\
+  ...\char`\\end\{tikz\}\char`\\edef\char`\\@gobble\char`\\relax\char`\\dimexpr\char`\\numexpr\char`\\the\char`\\@empty\\
+  \char`\\meaning\char`\\global\char`\\xdef\char`\\csname...\char`\\endcsname\char`\\@firstofone\char`\\null\\\char`\\toks@\char`\\loop\char`\\@for\char`\\ensuremath\char`\\parskip\char`\\parindent\char`\\protected\\ \char`\\unexpanded\char`\\renewcommand\char`\\hbox\char`\\pbox\char`\\hphantom\char`\\vphantom\char`\\rule\\\char`\\raisebox\char`\\kern\char`\\hskip\char`\\vskip\char`\\glueexpr\char`\\allowdisplaybreaks...}
 
   \vspace{1em}
-  패키지: \texttt{expl3}, \texttt{xkeyval}, \texttt{pgf}, \texttt{tikz}, \texttt{tikzcd}, \texttt{ulem}, \texttt{tcolorbox}, \texttt{bibtex}, \texttt{natbib}, \texttt{fancyhdr}, \texttt{tcolorbox}, \texttt{environ}, \texttt{listings}, \texttt{minted}, \texttt{beamer, \dots}
+  패키지: \texttt{expl3}, \texttt{xkeyval}, \texttt{pgf}, \texttt{tikz}, \texttt{tikzcd}, \texttt{ulem}, \texttt{tcolorbox}, \texttt{bibtex}, \texttt{natbib}, \texttt{fancyhdr}, \texttt{tcolorbox}, \texttt{environ}, \texttt{listings}, \texttt{minted}, \texttt{beamer,...}
 
   \vspace{1em} 다른 언어의 도움: \LuaLaTeX, HaTeX, PyTeX, \dots
 \end{frame}
