@@ -49,7 +49,7 @@
         \item \LaTeX\,3: 현재 개발 중인 \LaTeX\ 버전
       \end{itemize}
       \item 이외에도 \ConTeXt이라는 확장이 있습니다.
-      \item Overleaf: 가장 유명한 온라인 \LaTeX\ 동시 편집 서비스 (\url{https://overleaf.com})
+      \item Overleaf: 가장 유명한 온라인 \LaTeX\ 동시 편집 서비스 (\url{https://overleaf.com}, 가입해서 따라해보세요!)
     \end{itemize}
   \end{frame}
   
@@ -113,6 +113,21 @@
 당신이 입력했던 제목입니다: \thetitle.\footnote{신기한가요??}
 \end{document}
   \end{minted}
+  \end{frame}
+    
+  
+  \begin{frame}[fragile]
+    \frametitle{달러나 백슬래시는 어떻게 입력할까요}
+    \framesubtitle{미국인이 만들었는데 달러를 입력 못할 리가 없겠죠!!}
+    \begin{itemize}
+      \item<1-> \mintinline[escapeinside=||]{latex}{\& \% \$ \# \_ \{ \} \char`~ \|\textvisiblespace| \char`^ \|\textvisiblespace| \char`\\} 
+      \item<1-> \& \% \$ \# \_ \{ \} \char`\~\ \char`\^\ \char`\\
+      \item<2-> 살짝씩 다르지만 다른 입력 방법도 많습니다:
+      \item<2-> \mintinline[escapeinside=||]{latex}{\textasciitilde\|\textvisiblespace|\textasciicircum\|\textvisiblespace|\textbackslash}
+      \item<2-> \textasciitilde\ \textasciicircum\ \textbackslash
+      \item<3-> \mintinline[escapeinside=||]{latex}{\^{} \~{} \string^ \string~ \string\}
+      \item<3-> \^{} \~{} \string^ \string~ \string\
+    \end{itemize}
   \end{frame}
   
   \begin{frame}[fragile]
@@ -257,12 +272,9 @@ Radical of an ideal $\sqrt{\mathfrak a}$
       \begin{itemize}
         \item 두 개 이상 연속 띄어쓰기가 있을 때 한 개만 남습니다. 즉 띄어쓰기 여러 개를 쓰려면 \mintinline{latex}{\ \ \ }와 같이 써야 합니다.
         \item 한 줄의 맨 앞{\,\small(leading)\normalsize\,}에 있는 띄어쓰기는 모두 무시됩니다.
-        \item 매크로 뒤의 공백은 (특별한 처리를 하지 않은 이상) 무시됩니다. \mintinline{latex}{\TeX \TeX} $\to$ \TeX \TeX
+        \item (알파벳으로 끝나는) 매크로 뒤의 공백은 (특별한 처리를 하지 않은 이상) 무시됩니다. \mintinline{latex}{\TeX \TeX} $\to$ \TeX \TeX
       \end{itemize}
       \item<3-> 텍스트 모드에서, 줄바꿈의 위아래 줄이 비어있지 않으면 그 줄바꿈은 띄어쓰기로 처리됩니다.
-      \begin{itemize}
-        \item 이 띄어쓰기를 없애려면 그 줄 끝에 주석 기호 \texttt{\%}를 붙이면 그 줄바꿈이 주석 처리되어 사라집니다. 참고로, 다음 줄의 앞에 있는 띄어쓰기까지 모두 사라집니다.
-      \end{itemize}
     \end{itemize}
   \end{frame}
 
@@ -276,21 +288,6 @@ Radical of an ideal $\sqrt{\mathfrak a}$
         \item \mintinline{latex}{$not a good example$} $not a good example$
         \item \mintinline{latex}{$\textrm{\textit{good example}}$} $\textrm{\textit{good example}}$
       \end{itemize}
-    \end{itemize}
-  \end{frame}
-    
-  
-  \begin{frame}[fragile]
-    \frametitle{달러나 백슬래시는 어떻게 입력할까요}
-    \framesubtitle{미국인이 만들었는데 달러를 입력 못할 리가 없겠죠!!}
-    \begin{itemize}
-      \item<1-> \mintinline[escapeinside=||]{latex}{\& \% \$ \# \_ \{ \} \char`~ \|\textvisiblespace| \char`^ \|\textvisiblespace| \char`\\} 
-      \item<1-> \& \% \$ \# \_ \{ \} \char`\~\ \char`\^\ \char`\\
-      \item<2-> 살짝씩 다르지만 다른 입력 방법도 많습니다:
-      \item<2-> \mintinline[escapeinside=||]{latex}{\textasciitilde\|\textvisiblespace|\textasciicircum\|\textvisiblespace|\textbackslash}
-      \item<2-> \textasciitilde\ \textasciicircum\ \textbackslash
-      \item<3-> \mintinline[escapeinside=||]{latex}{\^{} \~{} \string^ \string~ \string\}
-      \item<3-> \^{} \~{} \string^ \string~ \string\
     \end{itemize}
   \end{frame}
   

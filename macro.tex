@@ -5,8 +5,10 @@
   \begin{itemize}
     \item<1-> 편집부장님: ``레이텍으로 구구단을 만들어 주세요!''
     \item<1-> 안타까운 사람들: \mintinline[escapeinside=||]{latex}{$2 \times 2 = 4$, $2 \times 3 = 6$, ...}
-    \item<2-> 매크로를 배운 후:\vspace{-1em}
-    \begin{minted}{latex}
+    \item<2-> 매크로를 배운 후:
+
+    \vspace{-2em}\begin{minted}{latex}
+% usepackage{forloop}
 \newcounter{left} \newcounter{right}
 \forloop{left}{2}{\value{left} < 10}{%
   \noindent\forloop{right}{2}{\value{right} < 10}{%
@@ -69,6 +71,33 @@
 \end{frame}
 
 \begin{frame}[fragile]
+  \frametitle{띄어쓰기는 중요합니다}
+  \framesubtitle{의도하지 않은 띄어쓰기를 방지하기}
+  \begin{itemize}
+    \item[\mysymbol\;]<1-> \vspace{-1.5em}\begin{minted}{latex}
+\newcommand\alphabet{
+a
+}
+\alphabet\alphabet\alphabet
+    \end{minted}
+    \item<1-> 결과는?
+    \item<2-> \newcommand\alphabet{
+a
+}
+      \alphabet\alphabet\alphabet
+  \item<3-> 줄바꿈 때문에 \mintinline{latex}{\alphabet}에는 \mintinline[escapeinside=||]{latex}{|\textvisiblespace|a|\textvisiblespace|}가 들어가서, 저 코드는 \mintinline[escapeinside=||]{latex}{|\textvisiblespace|a|\textvisiblespace\textvisiblespace|a|\textvisiblespace\textvisiblespace|a|\textvisiblespace|} $\to$ \mintinline[escapeinside=||]{latex}{a|\textvisiblespace|a|\textvisiblespace|a|\textvisiblespace|}를 출력한다!
+  \item<4->띄어쓰기를 없애려면?
+  
+  \vspace{-2em}\begin{minted}{latex}
+\newcommand\alphabet{%
+a%
+}
+\alphabet\alphabet\alphabet
+  \end{minted}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
   \frametitle{매크로 예시!!}
   \framesubtitle{간단하고 쉬운 것}
   \begin{itemize}
@@ -76,6 +105,8 @@
     \item \mintinline[escapeinside=||]{latex}{\newcommand{\bsalpha}{\boldsymbol{\alpha}}} \newcommand{\bsalpha}{$\boldsymbol{\alpha}$} \bsalpha
     \item $\mathbb Z$를 간단하게 쓰고 싶을 때:
     \item \mintinline[escapeinside=||]{latex}{\newcommand{\ZZ}{\mathbb{Z}}} \newcommand{\ZZ}{{\mathbb Z}} $\ZZ$
+    \item {ㅇㅅ\kern1pt\llap{ㅇㅅ}}를 간단하게 쓰고 싶을 때:
+    \item \mintinline[escapeinside=||]{latex}{\newcommand{\furueru}[1][ㅇㅅ]{#1\kern1pt\llap{#1}}} \newcommand{\furueru}[1][ㅇㅅ]{#1\kern1pt\llap{#1}} \furueru\ \furueru[ㅠㅠ]
   \end{itemize}
 \end{frame}
 
