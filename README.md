@@ -1,6 +1,8 @@
 # 2019 수문연 편집부 레이텍 세미나
 
-[main.pdf](main.pdf)
+파일을 보려면 이미지를 클릭
+[![](landing.png)](main.pdf)
+
 
 * 2018 여름 LaTeX 스터디: http://utophii.dothome.co.kr/tex/
 
