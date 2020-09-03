@@ -4,12 +4,6 @@
 [![](landing.png)](main.pdf)
 
 
-* 2018 여름 LaTeX 스터디: http://utophii.dothome.co.kr/tex/
-
-## TinyTeX 설치
-[여기 참고](https://github.com/utophii/tinytex-for-korean)
-
-
 ## 생각없이 불러오면 편한 패키지들
 ```tex
 \usepackage{kotex}
